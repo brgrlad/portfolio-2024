@@ -19,14 +19,6 @@
 .marginRight {
   margin-right: 80px;
 }
-.animation {
-  width: 150px;
-  height: 65px;
-  margin: 0 15px;
-  border-radius: 5px;
-  background-image: url(../../assets/img/animated1.gif);
-  opacity: 0;
-}
 
 .marginLeft {
   margin-left: 90px;
@@ -94,6 +86,16 @@ h3,
   z-index: 3;
 }
 
+/* _______ SQUARE ANIMATION _____ */
+/* .animation {
+  width: 150px;
+  height: 65px;
+  margin: 0 15px;
+  border-radius: 5px;
+  background-image: url(../../assets/img/animated1.gif);
+  opacity: 0;
+} */
+
 @media screen and (max-width: 1100px) {
   h2,
   h3,
@@ -105,6 +107,7 @@ h3,
     font-size: 8vw;
   }
 }
+
 @media screen and (max-width: 600px) {
   .hero {
     width: 90%;
