@@ -1,0 +1,22 @@
+import "./hero.css";
+export default function Hero() {
+  return (
+    <section className="hero">
+      <div className="row ">
+        <h2 className="stroke">WEB DEVELOPER</h2>
+        <div className="animation"></div>
+      </div>
+      <div className="row creative">
+        <p className="and">AND </p>
+        <p className="headerP textGIF">CREATIVE MIND </p>
+      </div>
+      <div className="row ">
+        <div className="animation"></div>
+        <h3 className="stroke">BASED IN DUBLIN</h3>
+        <div className="arrow">
+          <p>SCROLL DOWN</p>
+        </div>
+      </div>
+    </section>
+  );
+}

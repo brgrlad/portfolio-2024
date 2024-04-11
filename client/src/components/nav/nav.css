@@ -1,0 +1,20 @@
+header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  position: absolute;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+
+  h1 {
+    font-size: 20px;
+  }
+  nav {
+    height: 50px;
+  }
+}
