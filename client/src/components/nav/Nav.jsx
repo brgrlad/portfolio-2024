@@ -5,7 +5,7 @@ export default function Nav() {
     <header>
       <h1 className="h1Header">BRUNO GRECCHI</h1>
       <nav>
-        <p> MENU</p>
+        <button> MENU </button>
       </nav>
     </header>
   );

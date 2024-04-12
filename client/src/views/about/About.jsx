@@ -1,5 +1,5 @@
 import "./about.css";
-import profilePic from "../../assets/img/profile3.webp";
+import profilePic from "../../assets/img/profileanimated.webp";
 import profileIcon from "../../assets/img/asset-2.svg";
 export default function About() {
   return (

@@ -9,8 +9,12 @@
   display: flex;
   justify-content: center;
 
-  background-image: url(../../assets/img/22.svg);
+  /* background-image: url(../../assets/img/22.svg); */
+  background-image: url(../../assets/img/18.png);
+  filter: opacity(80%);
+
   background-position: right;
+  background-blend-mode: color-burn;
 
   background-size: cover;
 }
@@ -55,17 +59,18 @@ span {
 .profileIcon {
   position: absolute;
   width: 20%;
-  top: 70%;
+  top: 55%;
   left: 150px;
   opacity: 20%;
 }
 
 .profilePic {
   width: 350px;
+  border: 2px solid #ffffff;
   height: 350px;
   position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.278);
-  top: 20%;
+  /* border: 1px solid rgba(255, 255, 255, 0.278); */
+  top: 25%;
   border-radius: 50%;
   z-index: -1;
   filter: brightness(70%);

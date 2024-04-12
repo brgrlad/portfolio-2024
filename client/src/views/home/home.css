@@ -5,8 +5,10 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgb(17, 17, 17);
-  background-image: url(../../assets/img/3.jpg);
-  filter: contrast(120%);
+  /* background-image: url(../../assets/img/3.jpg); */
+  background-image: url(../../assets/img/15.png);
+  background-image: url(../../assets/img/22.svg);
+  /* filter: contrast(120%); */
   background-position: top;
   background-size: cover;
   text-align: center;

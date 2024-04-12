@@ -54,6 +54,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+}
+
 li {
   list-style: none;
 }
