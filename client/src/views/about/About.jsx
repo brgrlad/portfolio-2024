@@ -1,6 +1,7 @@
 import "./about.css";
 import profilePic from "../../assets/img/profileanimated.webp";
 import profileIcon from "../../assets/img/asset-2.svg";
+
 export default function About() {
   return (
     <section className="about" id="about">
@@ -10,6 +11,13 @@ export default function About() {
           BRUNO <span className="stroke"> GRECCHI</span>
         </h3>
         <img src={profilePic} className="profilePic"></img>
+
+        <div className="aboutText2">
+          <p>
+            I`M A WEB DEVELOPER WITH EXPERTISE IN THE MERN STACK YEARS OF
+            EXPERIENCE IN THE DIGITAL MARKETING AND COMMUNICATIONS SECTORS. .
+          </p>
+        </div>
 
         <div className="aboutText">
           <p>
@@ -23,6 +31,7 @@ export default function About() {
             CAREER CHAPTER IN THE IT SECTOR!
           </p>
         </div>
+
         <img src={profileIcon} className="profileIcon"></img>
       </div>
     </section>
