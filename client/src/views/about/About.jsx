@@ -12,14 +12,14 @@ export default function About() {
         </h3>
         <img src={profilePic} className="profilePic"></img>
 
-        <div className="aboutText2">
+        <div className="aboutText1">
           <p>
-            I`M A WEB DEVELOPER WITH EXPERTISE IN THE MERN STACK YEARS OF
-            EXPERIENCE IN THE DIGITAL MARKETING AND COMMUNICATIONS SECTORS. .
+            I`M A WEB DEVELOPER WITH EXPERTISE IN THE MERN STACK OVER 8 YEARS OF
+            EXPERIENCE IN THE DIGITAL MARKETING AND COMMUNICATIONS SECTORS.
           </p>
         </div>
 
-        <div className="aboutText">
+        <div className="aboutText2">
           <p>
             I`M A WEB DEVELOPER WITH EXPERTISE IN THE MERN STACK YEARS OF
             EXPERIENCE IN THE DIGITAL MARKETING AND COMMUNICATIONS SECTORS.

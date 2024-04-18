@@ -8,20 +8,17 @@
   display: flex;
   justify-content: center;
   background-image: url(../../assets/img/7.png);
-  /* background-image: url(../../assets/img/18.png);
-  filter: opacity(80%); */
+
   background-position: right;
-  /* background-blend-mode: color-burn; */
+
   background-size: cover;
 }
 
 .aboutBackground {
-  padding: 0;
-  margin: none;
   background: linear-gradient(
     184deg,
     rgb(0, 0, 0) 10%,
-    rgba(72, 72, 72, 0.211) 72%
+    rgba(72, 72, 72, 0.209) 72%
   );
 
   width: 100%;
@@ -35,7 +32,6 @@
   font-size: 20px;
   font-weight: 100;
   line-height: 55px;
-  /* z-index: 20; */
 }
 
 .about h3 {
@@ -43,7 +39,6 @@
   font-weight: 900;
   line-height: 70px;
   letter-spacing: 0.1px;
-  /* z-index: 20; */
 }
 
 .about span {
@@ -56,41 +51,39 @@
   width: 20%;
   bottom: 10%;
   left: 2%;
-  opacity: 20%;
+  opacity: 10%;
 }
 
 .profilePic {
-  /* width: 350px;
-  height: 350px; */
-
   width: 30vw;
   position: absolute;
   top: 22%;
   border-radius: 50%;
   z-index: -1;
-  filter: brightness(70%);
 }
 
-.aboutText {
+.aboutText2 {
   font-size: 16px;
-  width: 350px;
+  width: 300px;
   position: absolute;
-  right: 15%;
+  right: 22%;
   text-align: left;
   font-weight: 100;
-
-  top: 60%;
+  top: 55%;
 }
-.aboutText2 {
+.aboutText1 {
   font-weight: 100;
   text-align: right;
   color: white;
-  width: 280px;
+  width: 300px;
   font-size: 20px;
   position: absolute;
-
-  left: 19%;
+  left: 22%;
   top: 40%;
+  padding: 20px;
+  border-radius: 10px;
+
+  background-size: cover;
 }
 
 @media screen and (max-width: 1100px) {
@@ -98,14 +91,109 @@
     font-size: 85px;
     line-height: 55px;
   }
-  .aboutText {
-    /* width: 30px; */
-    right: 80px;
+
+  .aboutText1 {
     font-size: 1rem;
+    left: 15%;
+  }
+  .aboutText2 {
+    font-size: 0.9rem;
     top: 50%;
+    right: 15%;
+  }
+  .profileIcon {
+    top: 60%;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .profilePic {
+    width: 40%;
+  }
+
+  .aboutText2 {
+    right: 15%;
+    top: 55%;
+    width: 280px;
+  }
+  .aboutText1 {
+    top: 45%;
+    left: 15%;
   }
 
   .profileIcon {
-    left: 80px;
+    bottom: 3%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .aboutText1 {
+    left: 90px;
+  }
+
+  .aboutText2 {
+    right: 90px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .aboutText1 {
+    left: 8%;
+  }
+
+  .aboutText2 {
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .profilePic {
+    width: 250px;
+    top: 15%;
+  }
+  .about h3 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .profilePic {
+    margin-bottom: 700px;
+  }
+
+  .aboutText1,
+  .aboutText2 {
+    width: 80%;
+    text-align: center;
+
+    left: auto;
+    right: auto;
+  }
+
+  .aboutText1 {
+    font-size: 1.3rem;
+    top: 38%;
+  }
+
+  .aboutText2 {
+    font-size: 1rem;
+
+    top: 64%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .profilePic {
+    width: 350px;
+  }
+
+  .aboutText1 {
+    font-size: 1.1rem;
+    top: 450px;
+  }
+  .aboutText2 {
+    font-size: 0.9rem;
+    top: 620px;
   }
 }
