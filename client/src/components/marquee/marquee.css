@@ -1,7 +1,12 @@
 .marqueeWrapper {
-  background-color: white;
+  background-color: black;
+  height: 100px;
 }
 .marqueeh2 {
   font-size: 3rem;
-  color: black;
+
+  /* color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: rgb(14, 14, 14); */
 }

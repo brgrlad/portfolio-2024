@@ -21,11 +21,10 @@ export default function Stack() {
   return (
     <section className="tech-stack">
       <Marquee />
-      {/* <h3>TECHNOLOGIES I WORK WITH </h3> */}
 
-      <section className="logos">
+      <div className="logos">
         {logos.map((fileName, index) => (
-          <div className="logoWrapper" key={index}>
+          <div className="logoCard" key={index}>
             <img
               key={index}
               src={"../../../public/logos/" + fileName}
@@ -35,7 +34,7 @@ export default function Stack() {
             <p>{fileName.substring(2, fileName.length - 4)}</p>
           </div>
         ))}
-      </section>
+      </div>
     </section>
   );
 }

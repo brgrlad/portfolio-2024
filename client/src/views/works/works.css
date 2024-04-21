@@ -1,0 +1,71 @@
+.works {
+  width: 100vw;
+
+  background-color: rgb(21, 21, 21);
+  padding: 40px;
+}
+
+.works ul {
+  margin: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.works li {
+  font-size: 4rem;
+  border-bottom: 0.5px solid white;
+  font-weight: 100;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrowUp {
+  width: 5rem;
+  height: 5rem;
+
+  padding: 5px;
+  rotate: 180deg;
+  margin: 0 40px;
+}
+
+.works h3 {
+  font-size: 2rem;
+}
+
+.project {
+  margin: 10px 0;
+  display: flex;
+  padding: 20px 20px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 10px;
+}
+
+.tags {
+  text-align: right;
+}
+
+.tag {
+  font-style: italic;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: 1px solid rgba(132, 132, 132, 0.832);
+  margin-right: 0.5rem;
+  padding: 5px 20px;
+  border-radius: 50%;
+}
+.projectDescription {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.arrowUp:hover {
+  background-color: rgba(0, 167, 0, 0.882);
+}
+
+.project1 {
+  width: 50%;
+}
