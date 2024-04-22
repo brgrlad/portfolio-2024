@@ -64,6 +64,7 @@
 
 .arrowUp:hover {
   background-color: rgba(0, 167, 0, 0.882);
+  cursor: pointer;
 }
 
 .project1 {

@@ -1,0 +1,74 @@
+.tech-stack {
+  width: 100vw;
+}
+
+.logosWrapper {
+  background-image: url(../../assets/img/grids/ooorganize-3.svg);
+  background-repeat: repeat;
+  background-size: 20%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 40px;
+}
+
+.logoCard1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10px;
+  /* margin: 10px 20px; */
+  width: 25%;
+  height: 150px;
+  /* border: 1px solid red; */
+
+  /* filter: drop-shadow(-4px 3px 3px #0000006c); */
+  /* backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px; */
+}
+
+.h3Wrapper {
+  min-width: 50%;
+  max-width: 50%;
+
+  border: 1px solid rgba(0, 128, 0, 0.667);
+  border-radius: 60%;
+
+  text-align: center;
+  line-height: 1px;
+
+  background-color: transparent;
+}
+
+.h3Wrapper h3 {
+  font-size: 2.5rem;
+}
+.logoCard1 img {
+  width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  /* min-height: 150px;
+  max-height: 150px; */
+
+  /* min-height: 150px;
+  max-height: 1500px; */
+
+  filter: grayscale(100%) invert(100%) brightness(300%);
+}
+
+.logoName {
+  border: 1px solid rgba(45, 141, 85, 0.422);
+  font-weight: 100;
+
+  padding: 0 20px;
+  border-radius: 100%;
+
+  -webkit-backdrop-filter: blur(1px);
+}
