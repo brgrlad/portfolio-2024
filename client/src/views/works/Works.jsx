@@ -1,6 +1,7 @@
 import "./works.css";
 import ArrowUpSolid from "../../assets/img/arrow-up-solid.svg";
 import samplePic from "../../assets/img/10.png";
+import arrowSide from "../../assets/img/icons/next.png";
 import { useState } from "react";
 
 export default function Works() {
@@ -38,9 +39,12 @@ export default function Works() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
                 quod saepe quam consequuntur vero aut! Fuga adipisci nulla
                 perferendis eligendi. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Unde, minus. quod saepe quam
-                consequuntur vero aut! Fuga adipisci nulla perferendis eligendi.
+                <span className="newLine">
+                  adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Unde, minus. quod saepe quam
+                  consequuntur vero aut! Fuga adipisci nulla perferendis
+                  eligendi.
+                </span>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
                 minu quod saepe quam consequuntur vero aut! Fuga adipisci nulla
                 perferendis eligendi. Lorem ipsum dolor, sit amet consectetur
@@ -49,12 +53,22 @@ export default function Works() {
                 dolor, sit amet consectetur adipisicing elit. Unde, minu
               </p>
 
-              <p className="tags">
+              <div className="buttons">
+                <button>
+                  SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                </button>
+                <button>
+                  VIEW LIVE
+                  <img src={arrowSide} className="openArrow" alt="" />
+                </button>
+              </div>
+
+              {/* <p className="tags">
                 <span className="tag">HTML</span>
                 <span className="tag">CSS</span>{" "}
                 <span className="tag">FRONT END</span>{" "}
                 <span className="tag">MONGO</span>
-              </p>
+              </p> */}
             </div>
 
             <img src={samplePic} className="project1"></img>

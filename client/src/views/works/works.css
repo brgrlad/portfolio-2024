@@ -2,17 +2,17 @@
   width: 100vw;
 
   background-color: rgb(21, 21, 21);
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .works ul {
-  margin: auto;
+  margin: 20px auto;
   width: 100%;
   padding: 0;
 }
 
 .works li {
-  font-size: 4rem;
+  font-size: 5vw;
   border-bottom: 0.5px solid white;
   font-weight: 100;
   display: flex;
@@ -22,12 +22,10 @@
 }
 
 .arrowUp {
-  width: 5rem;
-  height: 5rem;
-
+  width: 3vw;
+  height: 3vw;
   padding: 5px;
   rotate: 180deg;
-  margin: 0 40px;
 }
 
 .works h3 {
@@ -37,29 +35,42 @@
 .project {
   margin: 10px 0;
   display: flex;
+  justify-content: space-evenly;
   padding: 20px 20px;
   background-color: rgb(38, 38, 38);
   border-radius: 10px;
 }
 
-.tags {
-  text-align: right;
+.project button {
+  font-style: italic;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  float: right;
+  margin-left: 10px;
 }
 
-.tag {
-  font-style: italic;
-  font-size: 0.7rem;
-  font-weight: 500;
-  border: 1px solid rgba(132, 132, 132, 0.832);
-  margin-right: 0.5rem;
-  padding: 5px 20px;
-  border-radius: 50%;
+.openArrow {
+  rotate: 320deg;
+  width: 1.5rem;
+  color: white;
 }
+
 .projectDescription {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 20px;
+}
+
+button > img {
+  width: 20px;
+  display: inline;
+  margin-left: 10px;
+  filter: grayscale(100%) invert(100%) brightness(300%);
+
+  padding: 0;
 }
 
 .arrowUp:hover {
@@ -69,4 +80,24 @@
 
 .project1 {
   width: 50%;
+}
+@media screen and (max-width: 870px) {
+  .project {
+    flex-wrap: wrap-reverse;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+
+  .buttons button {
+    margin-left: 20px;
+  }
+
+  .projectDescription,
+  .project1 {
+    width: 100%;
+  }
 }
