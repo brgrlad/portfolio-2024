@@ -1,7 +1,9 @@
 import "./works.css";
 import ArrowUpSolid from "../../assets/img/arrow-up-solid.svg";
-import samplePic from "../../assets/img/10.png";
+import samplePic from "../../assets/img/gradients/10.png";
 import arrowSide from "../../assets/img/icons/next.png";
+import star from "../../assets/img/svgs/asset-2.svg";
+// import newImg from "../../assets/img/icons/pattern.png";
 import { useState } from "react";
 
 export default function Works() {
@@ -14,12 +16,17 @@ export default function Works() {
   return (
     <section className="works" id="works">
       <div className="worksHeader">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliqui.lorem
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+          voluptate!
+        </p>
         <h2>WORKS</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae
-        molestiae libero odit tempora consequuntur non enim nulla eius harum
-        officiis ab vel minima, nihil, odio asperiores eum, nobis in.
       </div>
-
+      {/* <img src={newImg} className="myNewImg"></img> */}
+      <img src={star} className="star"></img>
+      <img src={star} className="star"></img>
+      <img src={star} className="star"></img>
       <ul className="worksUL">
         <li>
           DRUM MACHINE

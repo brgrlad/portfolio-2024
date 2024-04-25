@@ -1,8 +1,55 @@
 .works {
   width: 100vw;
-
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(90, 90, 90);
   padding: 20px 40px;
+
+  filter: invert(100%);
+}
+
+.works h2 {
+  position: relative;
+  z-index: 3;
+  border: 2px solid green;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 60%;
+
+  top: 20%;
+
+  font-weight: 900;
+}
+
+.star {
+  width: 10%;
+  /* float: right; */
+  display: inline;
+  margin-right: auto;
+  filter: invert(100%);
+  margin-right: 10px;
+}
+
+.worksHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myNewImg {
+  width: 100px;
+  padding: 20px;
+
+  margin-top: -60px;
+
+  margin-left: auto;
+  /* float: right; */
+}
+
+.worksHeader p {
+  width: 55%;
+  margin-top: 20px;
+  text-align: right;
+
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .works ul {

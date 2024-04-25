@@ -57,7 +57,7 @@ h6 {
 button {
   background-color: transparent;
   border: none;
-  color: var(--text-color);
+  color: var(--text-white);
   display: flex;
   justify-content: center;
   align-items: center;

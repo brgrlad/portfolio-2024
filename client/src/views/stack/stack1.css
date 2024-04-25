@@ -6,7 +6,7 @@
   background-image: url(../../assets/img/grids/ooorganize-3.svg);
   background-repeat: repeat;
   background-size: 20%;
-  background-color: rgba(0, 0, 0, 0.607);
+  background-color: var(--primary-black);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,7 +37,7 @@
 .h3Wrapper {
   min-width: 50%;
   max-width: 50%;
-  border: 1px solid rgba(0, 128, 0, 0.527);
+  border: var(--border-green);
   border-radius: 60%;
   text-align: center;
   margin-top: -50px;

@@ -1,15 +1,21 @@
 :root {
-  --primary-color: #171717;
+  /* --primary-color: #171717;
   --secondary-color: #565656;
-  --accent-color: #5cc825;
+  --accent-color: rgb(0, 94, 0);
   --text-color: rgb(229, 229, 229);
-  --border-style: 1px solid pink;
+  --border-style: 1px solid var(--accent-color); */
+
+  --primary-black: #0a0a0a;
+  --secondary-gray: #121212;
+  --light-gray: rgb(173, 173, 173);
+  --accent-green: rgb(0, 94, 0);
+  --text-white: rgb(229, 229, 229);
+  --border-green: 1px solid var(--accent-green);
+
   width: 100vw;
   max-width: 100vw;
-
   margin: auto;
-  background-color: var(--primary-color);
-
+  background-color: var(--primary-black);
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -17,7 +23,7 @@ body {
   width: 100%;
   margin: auto;
   max-width: 1600px;
-  color: var(--text-color);
+  color: var(--text-white);
 }
 
 img {
@@ -27,9 +33,9 @@ img {
 .stroke {
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: white;
-}
 
-/* background-color: var(--primary-color); */
-/* border: var(--border-style);  */
+  /* color: #000000; */
+  /* mix-blend-mode: difference; */
+}

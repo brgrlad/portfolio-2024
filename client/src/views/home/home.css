@@ -4,12 +4,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(17, 17, 17);
-  /* background-image: url(../../assets/img/3.jpg); */
-  background-image: url(../../assets/img/15.png);
+  background-color: black;
+
+  /* background: rgb(0, 0, 0); */
+
+  /* background-image: url(../../assets/img/gradients/9.png); */
+
+  /* background-image: url(../../assets/img/15.png); */
+  /* background-image: url(../../assets/img/bgs/vecteezy_gray-gradient-background-design-for-flyer-banner-flyer_27851086.jpg); */
   /* background-image: url(../../assets/img/22.svg); */
-  filter: contrast(110%);
-  background-position: top;
+  /* filter: contrast(110%); */
+
   background-size: cover;
+  background-position: top;
   text-align: center;
 }
