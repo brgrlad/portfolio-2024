@@ -7,8 +7,11 @@ export default function About() {
     <section className="about" id="about">
       <div className="aboutBackground">
         <h2>ABOUT ME</h2>
+
+        {/* CLASS STROKE  + SPAN*/}
         <h3 className="stroke">
-          BRUNO <span className="stroke"> GRECCHI</span>
+          BRUNO GRECCHI
+          {/* BRUNO <span className="stroke"> GRECCHI</span> */}
         </h3>
         <img src={profilePic} className="profilePic"></img>
 

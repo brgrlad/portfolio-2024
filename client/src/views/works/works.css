@@ -1,8 +1,10 @@
 .works {
   width: 100vw;
-  background-color: var(--light-gray);
+
   padding: 20px 40px;
   color: var(--faded-black);
+
+  background-color: var(--light-gray);
 }
 
 .worksHeader {
