@@ -56,10 +56,8 @@
   left: 22%;
 }
 .logoCard1 img {
-  width: 100px;
-  min-height: 50px;
-  max-height: 50px;
-
+  height: 40px;
+  width: 50px;
   filter: grayscale(100%) invert(100%) brightness(300%);
 }
 
@@ -69,15 +67,29 @@
 
 @media screen and (max-width: 500px) {
   .h3Wrapper {
-    color: pink;
     margin-top: 0;
-    margin-bottom: 20px;
-
     min-width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     line-height: 2rem;
+    padding: 20px 0;
+
     border: none;
   }
+  .h3Wrapper p {
+    width: 100%;
+    /* border: 1px solid red; */
+    top: 60px;
 
+    left: 0;
+  }
+  .h3Wrapper h3 {
+    border: 1px solid var(--accent-green);
+    border-radius: 60%;
+    padding: 0;
+    width: fit-content;
+  }
   .logoCard1 {
     margin: 5px 10px;
     padding: 20px;
@@ -88,10 +100,10 @@
   }
 
   .logosWrapper h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .logosWrapper p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .logosWrapper {

@@ -29,7 +29,7 @@ img {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: rgb(227, 227, 227);
 
   /* color: #000000; */
   /* mix-blend-mode: difference; */

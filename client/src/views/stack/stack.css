@@ -1,12 +1,7 @@
 .tech-stack {
   width: 100vw;
-  /* height: 100vh; */
-  /* background-color: rgb(226, 226, 226); */
-  /* display: flex;
-  flex-direction: column; */
-
+  min-height: 100vh;
   color: white;
-
   background-image: url(../../assets/img/grids/ooorganize-3.svg);
   background-repeat: repeat;
   background-size: 30%;
@@ -32,19 +27,21 @@
   text-align: center;
 }
 .logos img {
-  min-height: 250px;
   max-height: 250px;
+
   width: 90px;
   filter: grayscale(100%) invert(100%) brightness(310%);
 }
 
-.logoCard {
-  /* padding: 0px 500px; */
-  /* margin: 50px 190px; */
+/* .logoCard {
   margin: 50px 170px;
-}
+  background-color: pink;
+} */
 
 @media screen and (max-width: 900px) {
+  .logoCard1 {
+    background-color: red;
+  }
   .logoCard {
     margin: 20px 40px;
     padding: 0px 40px;

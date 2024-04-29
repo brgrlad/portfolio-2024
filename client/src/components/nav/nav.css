@@ -4,7 +4,6 @@ header {
   display: flex;
   justify-content: space-between;
   color: white;
-
   position: absolute;
   align-items: center;
   top: 0;
@@ -19,13 +18,67 @@ nav {
   height: 50px;
 }
 
+.navUL {
+  position: absolute;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: 0 30px;
+  text-align: left;
+  font-weight: 900;
+  color: var(--faded-black);
+  font-size: 4rem;
+  background-color: rgb(232, 236, 240);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 20%;
+  z-index: 10;
+  overflow: hidden;
+  z-index: 8;
+}
+
+.navUL li:hover {
+  font-style: italic;
+  cursor: pointer;
+}
+
+.navUL li {
+  border-bottom: 0.5px solid var(--faded-black);
+
+  z-index: 3;
+}
+
+.navUL img {
+  width: 50%;
+  position: absolute;
+  right: 3%;
+  rotate: 200deg;
+  opacity: 5%;
+}
+
+.navUL button {
+  margin-top: -60px;
+  width: fit-content;
+  float: right;
+  border: 1px solid var(--faded-black);
+  margin-left: auto;
+  color: var(--faded-black);
+}
+
 button {
   font-size: 12px;
   font-weight: 700;
   padding: 5px 20px;
   border: var(--border-style);
+  border: 1px solid var(--light-gray);
   border-radius: 90%;
 }
+
 button:hover {
   cursor: pointer;
   opacity: 50%;
