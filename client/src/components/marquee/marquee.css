@@ -1,13 +1,14 @@
 .marqueeWrapper {
   background-color: var(--light-gray);
-  height: 30px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px 0;
 }
 .marqueeh2 {
-  font-weight: 400;
-  font-size: 2rem;
+  font-weight: 900;
+  font-size: 1.5rem;
 
   color: rgb(17, 17, 17);
 }

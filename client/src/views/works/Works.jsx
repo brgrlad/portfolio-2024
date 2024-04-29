@@ -19,7 +19,7 @@ export default function Works() {
         <p>
           Selected works as of May 2024. A mix of front-end, full-stack and
           mobile applications. All idealized and coded by me, with love, and
-          long hours of work!{" "}
+          long hours of work!
         </p>
         <h2>WORKS</h2>
       </div>

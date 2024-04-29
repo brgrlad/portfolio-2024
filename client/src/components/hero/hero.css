@@ -1,13 +1,13 @@
 .creative {
   /* animate the rotate prop */
 
+  height: 90px;
   width: 100%;
-  rotate: 1.5deg;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.621);
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
   border-radius: 80px;
-  border: 1px solid rgba(0, 0, 0, 0.286);
+  border: 2px solid rgba(0, 0, 0, 0.286);
 }
 
 .hero {
@@ -47,6 +47,7 @@ h3,
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  padding-top: 20px;
 }
 
 .row {

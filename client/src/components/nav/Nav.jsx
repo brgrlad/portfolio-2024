@@ -1,5 +1,5 @@
 import "./nav.css";
-import menuImg from "../../assets/img/FREE PNG SHAPES - KMIXC/8.png";
+import menuImg from "../../assets/img/icons/pattern.png";
 import { useState } from "react";
 
 export default function Nav() {
