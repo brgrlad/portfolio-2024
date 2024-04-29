@@ -17,82 +17,102 @@ export default function Works() {
     <section className="works" id="works">
       <div className="worksHeader">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliqui.lorem
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-          voluptate!
+          Selected works as of May 2024. A mix of front-end, full-stack and
+          mobile applications. All idealized and coded by me, with love, and
+          long hours of work!{" "}
         </p>
         <h2>WORKS</h2>
       </div>
-      {/* <img src={newImg} className="myNewImg"></img> */}
-      <img src={star} className="star"></img>
-      <img src={star} className="star"></img>
-      <img src={star} className="star"></img>
+
+      <div className="starWrapper">
+        <img src={star} className="star" />
+        <img src={star} className="star" />
+        <img src={star} className="star" />
+      </div>
+
       <ul className="worksUL">
         <li>
-          DRUM MACHINE
-          <img
-            src={ArrowUpSolid}
-            className="arrowUp"
-            alt="Arrow Up"
-            onClick={handleClick}
-          />
+          <div className="projectTitle">
+            <p> DRUM MACHINE</p>
+            <img
+              src={ArrowUpSolid}
+              className="arrowUp"
+              alt="Arrow Up"
+              onClick={handleClick}
+            />
+          </div>
+        </li>
+
+        <li>
+          <div className="projectTitle">
+            <p> DRUM MACHINE</p>
+            <img
+              src={ArrowUpSolid}
+              className="arrowUp"
+              alt="Arrow Up"
+              onClick={handleClick}
+            />
+          </div>
+        </li>
+
+        <li>
+          <div className="projectTitle">
+            <p> DRUM MACHINE</p>
+            <img
+              src={ArrowUpSolid}
+              className="arrowUp"
+              alt="Arrow Up"
+              onClick={handleClick}
+            />
+          </div>
+
+          {isClicked && (
+            <div className="project">
+              <div className="projectDescription">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
+                  nulla perferendis eligendi. Lorem ipsum dolor, sit amet
+                  consectetur
+                  <span className="newLine">
+                    adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Unde, minus. quod saepe quam
+                    consequuntur vero aut! Fuga adipisci nulla perferendis
+                    eligendi.
+                  </span>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, minu quod saepe quam consequuntur vero aut! Fuga
+                  adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Unde, minu quod saepe quam
+                  consequuntur vero aut! Fuga adipisci nulla perferendis
+                  eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit. Unde, minu
+                </p>
+
+                <div className="buttons">
+                  <button>
+                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                  </button>
+                  <button>
+                    VIEW LIVE
+                    <img src={arrowSide} className="openArrow" alt="" />
+                  </button>
+                </div>
+                {/* 
+                <p className="tags">
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>{" "}
+                  <span className="tag">FRONT END</span>{" "}
+                  <span className="tag">MONGO</span>
+                </p> */}
+              </div>
+
+              <img src={samplePic} className="projectImage"></img>
+            </div>
+          )}
         </li>
 
         {/*------------- * project -------------- */}
-        {isClicked && (
-          <div className="project">
-            <div className="projectDescription">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-                quod saepe quam consequuntur vero aut! Fuga adipisci nulla
-                perferendis eligendi. Lorem ipsum dolor, sit amet consectetur
-                <span className="newLine">
-                  adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
-                  consectetur adipisicing elit. Unde, minus. quod saepe quam
-                  consequuntur vero aut! Fuga adipisci nulla perferendis
-                  eligendi.
-                </span>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                minu quod saepe quam consequuntur vero aut! Fuga adipisci nulla
-                perferendis eligendi. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Unde, minu quod saepe quam consequuntur vero
-                aut! Fuga adipisci nulla perferendis eligendi. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Unde, minu
-              </p>
-
-              <div className="buttons">
-                <button>
-                  SOURCE CODE <img src="../../../public/logos/11github.svg" />
-                </button>
-                <button>
-                  VIEW LIVE
-                  <img src={arrowSide} className="openArrow" alt="" />
-                </button>
-              </div>
-
-              {/* <p className="tags">
-                <span className="tag">HTML</span>
-                <span className="tag">CSS</span>{" "}
-                <span className="tag">FRONT END</span>{" "}
-                <span className="tag">MONGO</span>
-              </p> */}
-            </div>
-
-            <img src={samplePic} className="project1"></img>
-          </div>
-        )}
-        <li>
-          NEWS APP
-          <img src={ArrowUpSolid} className="arrowUp" alt="Arrow Up" />
-        </li>
-        <li>
-          SIGN UP
-          <img src={ArrowUpSolid} className="arrowUp" alt="Arrow Up" />
-        </li>
-        <li>
-          AUTH
-          <img src={ArrowUpSolid} className="arrowUp" alt="Arrow Up" />
-        </li>
       </ul>
     </section>
   );

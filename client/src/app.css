@@ -1,19 +1,14 @@
 :root {
-  /* --primary-color: #171717;
-  --secondary-color: #565656;
-  --accent-color: rgb(0, 94, 0);
-  --text-color: rgb(229, 229, 229);
-  --border-style: 1px solid var(--accent-color); */
-
   --primary-black: #0a0a0a;
-  --secondary-gray: #121212;
-  --light-gray: rgb(173, 173, 173);
+  --faded-black: #171717;
+  --light-gray: rgb(145, 145, 145);
   --accent-green: rgb(0, 94, 0);
   --text-white: rgb(229, 229, 229);
   --border-green: 1px solid var(--accent-green);
 
   width: 100vw;
   max-width: 100vw;
+  overflow-x: hidden;
   margin: auto;
   background-color: var(--primary-black);
   font-family: "Red Hat Display", sans-serif;

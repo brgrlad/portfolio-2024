@@ -55,7 +55,7 @@
 
 .profilePic {
   width: 30vw;
-  height: 30vw;
+
   position: absolute;
   top: 22%;
   border-radius: 50%;
@@ -190,10 +190,10 @@
 
   .aboutText1 {
     font-size: 1.1rem;
-    top: 450px;
+    top: 400px;
   }
   .aboutText2 {
     font-size: 0.9rem;
-    top: 620px;
+    top: 580px;
   }
 }

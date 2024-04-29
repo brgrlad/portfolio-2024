@@ -1,55 +1,46 @@
 .works {
   width: 100vw;
-  background-color: rgb(90, 90, 90);
+  background-color: var(--light-gray);
   padding: 20px 40px;
-
-  filter: invert(100%);
-}
-
-.works h2 {
-  position: relative;
-  z-index: 3;
-  border: 2px solid green;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 60%;
-
-  top: 20%;
-
-  font-weight: 900;
-}
-
-.star {
-  width: 10%;
-  /* float: right; */
-  display: inline;
-  margin-right: auto;
-  filter: invert(100%);
-  margin-right: 10px;
+  color: var(--faded-black);
 }
 
 .worksHeader {
   display: flex;
   justify-content: space-between;
+  padding: 30px 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.myNewImg {
-  width: 100px;
-  padding: 20px;
+.works h2 {
+  z-index: 3;
+  border: 2px solid var(--accent-green);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 60%;
+  max-height: 6rem;
+}
 
-  margin-top: -60px;
+.starWrapper {
+  text-align: left;
+}
+.star {
+  width: 10%;
+  margin: auto;
+  display: inline;
 
-  margin-left: auto;
-  /* float: right; */
+  filter: invert(100%);
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .worksHeader p {
   width: 55%;
+  font-size: 20px;
   margin-top: 20px;
-  text-align: right;
-
-  background-repeat: no-repeat;
-  background-size: contain;
+  text-align: left;
+  /* border: 1px solid red; */
 }
 
 .works ul {
@@ -59,20 +50,36 @@
 }
 
 .works li {
-  font-size: 5vw;
-  border-bottom: 0.5px solid white;
-  font-weight: 100;
   display: flex;
-
+  flex-direction: column;
+  border-bottom: 1x solid var(--faded-black);
+  font-weight: 100;
   align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.projectTitle {
+  font-size: 40px;
+
+  width: 100%;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 0.5px solid var(--faded-black);
+}
+
+.works li p {
+  margin-bottom: 0;
 }
 
 .arrowUp {
-  width: 3vw;
-  height: 3vw;
-  padding: 5px;
+  width: 15px;
   rotate: 180deg;
+  filter: invert(100%);
+  display: inline;
+  float: right;
 }
 
 .works h3 {
@@ -84,7 +91,9 @@
   display: flex;
   justify-content: space-evenly;
   padding: 20px 20px;
-  background-color: rgb(38, 38, 38);
+
+  background-color: rgb(158, 158, 158);
+
   border-radius: 10px;
 }
 
@@ -95,12 +104,11 @@
   border: none;
   float: right;
   margin-left: 10px;
+  color: var(--faded-black);
 }
 
 .openArrow {
   rotate: 320deg;
-  width: 1.5rem;
-  color: white;
 }
 
 .projectDescription {
@@ -115,36 +123,91 @@ button > img {
   width: 20px;
   display: inline;
   margin-left: 10px;
-  filter: grayscale(100%) invert(100%) brightness(300%);
 
   padding: 0;
 }
 
 .arrowUp:hover {
-  background-color: rgba(0, 167, 0, 0.882);
   cursor: pointer;
 }
 
-.project1 {
+.projectImage {
   width: 50%;
 }
+
 @media screen and (max-width: 870px) {
+  .worksHeader {
+    padding: 20px 0;
+  }
+  .worksHeader p {
+    font-size: 0.8rem;
+  }
+
+  .project .projectImage {
+    margin-bottom: 20px;
+  }
+
   .project {
     flex-wrap: wrap-reverse;
   }
 
   .buttons {
-    width: 100%;
     display: flex;
     justify-content: right;
   }
 
   .buttons button {
-    margin-left: 20px;
+    margin: 30px 0 10px 10px;
+    background-color: var(--light-gray);
   }
 
   .projectDescription,
-  .project1 {
+  .projectImage {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projectTitle {
+    font-size: 25px;
+  }
+
+  .worksHeader {
+    flex-direction: column-reverse;
+    padding: 10px 0;
+  }
+
+  .worksHeader h2 {
+    text-align: center;
+    font-size: 5rem;
+    padding: 0;
+    width: fit-content;
+  }
+  .worksHeader p {
+    font-size: 0.8rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .star {
+    margin: 0;
+  }
+
+  .starWrapper {
+    text-align: right;
+  }
+
+  #works {
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    .project {
+      padding: 5px;
+    }
+  }
+
+  .buttons button {
+    font-size: 0.6rem;
   }
 }
