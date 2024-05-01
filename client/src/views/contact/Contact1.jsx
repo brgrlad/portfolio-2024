@@ -8,10 +8,10 @@ export default function Contact1() {
       </p>
 
       <div className="contactContent">
-        <p className="contactTextLarge">LETS WORK?</p>
+        <h2>LETS WORK?</h2>
         <p className="displayInline">some p element ::: </p>
-        <p className="contactTextLarge">some p element</p>
-        <p> FOR COLLABS</p>
+        <p className="displayInline">some p element</p>
+        <h2> FOR COLLABS</h2>
         <footer>
           <p>footer</p>
         </footer>
