@@ -7,30 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
-}
-
-.marquee {
-  position: absolute;
-  top: 0;
-}
-
-.contactContent {
-}
-
-.displayInline {
-  display: inline;
-}
-
-.reachOut {
-  font-size: 3rem;
-  font-weight: 900;
-  border: 1px solid green;
-  border-radius: 60%;
-}
-
-.email {
-  font-size: 4rem;
 }
 
 #contact:after {
@@ -43,10 +19,72 @@
   width: 300%;
   z-index: 2;
   opacity: 100;
-  /* animation: noise 2s steps(10) infinite; */
+  animation: noise 2s steps(10) infinite;
   background: url(../../assets/img/nnnoise.svg);
   background-repeat: repeat;
   background-size: 10%;
+}
+
+.marquee {
+  font-weight: 500;
+  color: var(--faded-black);
+  background-color: rgb(146, 219, 37);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.contactContent {
+  text-align: center;
+  line-height: 6rem;
+  padding: 30px;
+  z-index: 100;
+}
+
+.displayInline {
+  display: block;
+}
+.contactIMG {
+  position: absolute;
+  top: 18%;
+  left: 48%;
+  width: 100px;
+  filter: invert(100);
+}
+
+.contactTextLarge {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.email {
+  font-size: 4rem;
+  font-weight: 100;
+
+  /* text-decoration: underline; */
+  font-style: italic;
+}
+
+footer {
+  position: absolute;
+  /* height: 200px; */
+  padding: 30px;
+
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.socials {
+  font-size: 0.8rem;
+  font-weight: 900;
+  height: 25px;
+  z-index: 100;
+  padding: 15px 20px;
+  margin-left: 10px;
 }
 
 @keyframes noise {

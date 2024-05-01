@@ -1,4 +1,5 @@
 import "./contact.css";
+// import contactIMG from "../../assets/img/FREE PNG SHAPES - KMIXC/10.png";
 
 export default function Contact1() {
   return (
@@ -8,12 +9,16 @@ export default function Contact1() {
       </p>
 
       <div className="contactContent">
-        <p className="contactTextLarge">LETS WORK?</p>
-        <p className="displayInline">some p element ::: </p>
-        <p className="contactTextLarge">some p element</p>
-        <p> FOR COLLABS</p>
+        {/* <img src={contactIMG} alt="" className="contactIMG" /> */}
+        <h2>
+          STAY <span className="displayInline"> </span>IN TOUCH
+        </h2>
+
+        <p className="email">hello@devbruno.eu</p>
+
         <footer>
-          <p>footer</p>
+          <button className="socials"> GITHUB</button>
+          <button className="socials"> LINKEDIN</button>
         </footer>
       </div>
     </section>
