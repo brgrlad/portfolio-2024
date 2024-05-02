@@ -1,8 +1,8 @@
 import "./works.css";
-import ArrowUpSolid from "../../assets/img/arrow-up-solid.svg";
-import samplePic from "../../assets/img/gradients/10.png";
+import ArrowUpSolid from "../../assets/img/icons/arrow-up-solid.svg";
+import projectMockup from "../../assets/img/projects-mockups/1.jpg";
 import arrowSide from "../../assets/img/icons/next.png";
-import star from "../../assets/img/svgs/asset-2.svg";
+import sunIcon from "../../assets/img/icons/sun.svg";
 // import newImg from "../../assets/img/icons/pattern.png";
 import { useState } from "react";
 
@@ -25,9 +25,9 @@ export default function Works() {
       </div>
 
       <div className="starWrapper">
-        <img src={star} className="star" />
-        <img src={star} className="star" />
-        <img src={star} className="star" />
+        <img src={sunIcon} className="star" />
+        <img src={sunIcon} className="star" />
+        <img src={sunIcon} className="star" />
       </div>
 
       <ul className="worksUL">
@@ -107,7 +107,8 @@ export default function Works() {
                 </p> */}
               </div>
 
-              <img src={samplePic} className="projectImage"></img>
+              {/*add project img here  */}
+              <img src={projectMockup} className="projectImage"></img>
             </div>
           )}
         </li>

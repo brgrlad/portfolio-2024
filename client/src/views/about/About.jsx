@@ -1,6 +1,8 @@
 import "./about.css";
+// import profilePic from "../../assets/img/portrait.webp";
 import profilePic from "../../assets/img/portrait.webp";
-import profileIcon from "../../assets/img/asset-2.svg";
+// import profileIcon from "../../assets/img/asset-2.svg";
+import starIcon from "../../assets/img/icons/star.svg";
 
 export default function About() {
   return (
@@ -35,7 +37,7 @@ export default function About() {
           </p>
         </div>
 
-        <img src={profileIcon} className="profileIcon"></img>
+        <img src={starIcon} className="profileIcon"></img>
       </div>
     </section>
   );
