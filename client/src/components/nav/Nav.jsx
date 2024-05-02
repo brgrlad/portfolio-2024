@@ -1,5 +1,5 @@
 import "./nav.css";
-import menuImg from "../../assets/img/icons/pattern.png";
+
 import { useState } from "react";
 
 export default function Nav() {
@@ -18,13 +18,26 @@ export default function Nav() {
 
         {toggleMenu && (
           <ul className="navUL">
-            <img src={menuImg} alt="" />
-            <button onClick={handleClick}>CLOSE</button>
-            <li>HOME</li>
-            <li>ABOUT ME</li>
-            <li>TECH-STACK</li>
-            <li>WORKS</li>
-            <li>CONTACT</li>
+            <p className="stroke selectedWorks">SELECTED WORKS 2024</p>
+
+            <button onClick={handleClick} className="closeButton">
+              CLOSE
+            </button>
+            <li>
+              <span className="number">01</span>HOME
+            </li>
+            <li>
+              <span className="number">02</span>ABOUT
+            </li>
+            <li>
+              <span className="number">03</span>TECH-STACK
+            </li>
+            <li>
+              <span className="number">04</span>WORKS
+            </li>
+            <li>
+              <span className="number">05</span>CONTACT
+            </li>
           </ul>
         )}
       </nav>

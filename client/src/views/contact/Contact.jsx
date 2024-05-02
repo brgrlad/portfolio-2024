@@ -9,7 +9,6 @@ export default function Contact1() {
       </p>
 
       <div className="contactContent">
-        {/* <img src={contactIMG} alt="" className="contactIMG" /> */}
         <h2>
           STAY <span className="displayInline"> </span>IN TOUCH
         </h2>

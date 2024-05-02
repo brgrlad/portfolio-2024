@@ -19,10 +19,13 @@
   width: 300%;
   z-index: 2;
   opacity: 100;
-  animation: noise 2s steps(10) infinite;
+
+  animation: noise 6s steps(10) infinite;
   background: url(../../assets/img/nnnoise.svg);
+
   background-repeat: repeat;
   background-size: 10%;
+  /* background-color: rgba(0, 0, 0, 0.562); */
 }
 
 .marquee {
@@ -38,7 +41,7 @@
   text-align: center;
   line-height: 6rem;
   padding: 30px;
-  z-index: 100;
+  z-index: 99;
 }
 
 .displayInline {
