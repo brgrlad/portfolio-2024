@@ -4,40 +4,68 @@ import profilePic from "../../assets/img/portrait.webp";
 // import profileIcon from "../../assets/img/asset-2.svg";
 import starIcon from "../../assets/img/icons/star.svg";
 
+import { motion } from "framer-motion";
+
 export default function About() {
+  const enterAnimation = {
+    initial: { opacity: 0 },
+    transition: { duration: 3 },
+    whileInView: { opacity: 1 },
+    viewport: { margin: "-100px" },
+  };
+  const photoAnimation = {
+    initial: { y: 200 },
+    transition: { duration: 1.5 },
+    whileInView: { y: 0 },
+
+    viewport: { margin: "100px" },
+  };
+
   return (
     <section className="about" id="about">
       <div className="aboutBackground">
         <h2>ABOUT ME</h2>
 
-        {/* CLASS STROKE  + SPAN*/}
-        <h3 className="stroke">
+        <motion.h3 {...enterAnimation} className="stroke">
           BRUNO GRECCHI
-          {/* BRUNO <span className="stroke"> GRECCHI</span> */}
-        </h3>
-        <img src={profilePic} className="profilePic"></img>
+        </motion.h3>
+
+        <motion.img
+          {...photoAnimation}
+          src={profilePic}
+          className="profilePic"
+        />
 
         <div className="aboutText1">
-          <p>
+          <motion.p {...enterAnimation}>
             I`M A WEB DEVELOPER WITH EXPERTISE IN THE MERN STACK OVER 8 YEARS OF
             EXPERIENCE IN THE DIGITAL MARKETING AND COMMUNICATIONS SECTORS.
-          </p>
+          </motion.p>
         </div>
 
         <div className="aboutText2">
-          <p>
+          <motion.p {...enterAnimation}>
             I`M A WEB DEVELOPER WITH EXPERTISE IN THE MERN STACK YEARS OF
             EXPERIENCE IN THE DIGITAL MARKETING AND COMMUNICATIONS SECTORS.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p {...enterAnimation}>
             FLUENT IN ENGLISH, PORTUGUESE, AND SPANISH. PASSIONATE ABOUT
             EMERGING TECH AND THE CREATIVE INDUSTRY AND EAGER TO EMBARK ON A NEW
             CAREER CHAPTER IN THE IT SECTOR!
-          </p>
+          </motion.p>
         </div>
 
-        <img src={starIcon} className="profileIcon"></img>
+        <motion.img
+          {...photoAnimation}
+          whileInView={{
+            ...photoAnimation.whileInView,
+            y: "-100px",
+            rotate: "90deg",
+          }}
+          src={starIcon}
+          className="profileIcon"
+        />
       </div>
     </section>
   );

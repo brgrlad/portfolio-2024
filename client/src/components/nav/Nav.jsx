@@ -4,17 +4,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Nav() {
+  const animationSettings = {
+    initial: { opacity: 1, y: -2000 },
+    animate: { opacity: 1, y: 0 },
+
+    transition: { duration: 1, delay: 1, type: "spring" },
+  };
   let [toggleMenu, setToggleMenu] = useState(false);
 
   const handleClick = () => {
     setToggleMenu((prev) => !prev);
-  };
-
-  const animationSettings = {
-    initial: { opacity: 1, y: -1000 },
-    animate: { opacity: 1, y: 0 },
-
-    transition: { duration: 1 },
   };
 
   return (

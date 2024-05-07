@@ -1,12 +1,18 @@
 import "./home.css";
 import Nav from "../../components/nav/Nav";
 import Hero from "../../components/hero/Hero";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const scaleUp = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    transition: { duration: 5 },
+  };
   return (
-    <div className="homeWrapper">
+    <motion.div {...scaleUp} className="homeWrapper">
       <Nav />
       <Hero />
-    </div>
+    </motion.div>
   );
 }
