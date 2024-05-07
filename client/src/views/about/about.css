@@ -55,7 +55,7 @@
 
 .profilePic {
   width: 30vw;
-  height: 30vw;
+  /* height: 30vw; */
 
   position: absolute;
   top: 22%;

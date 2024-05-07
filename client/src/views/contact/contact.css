@@ -96,6 +96,10 @@ footer {
   margin-left: 10px;
 }
 
+.touch {
+  /* color: greenyellow; */
+}
+
 @keyframes noise {
   0%,
   100% {

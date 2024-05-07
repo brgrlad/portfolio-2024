@@ -1,4 +1,5 @@
 import "./nav.css";
+import { motion } from "framer-motion";
 
 import { useState } from "react";
 
@@ -9,15 +10,22 @@ export default function Nav() {
     setToggleMenu((prev) => !prev);
   };
 
+  const animationSettings = {
+    initial: { opacity: 1, y: -1000 },
+    animate: { opacity: 1, y: 0 },
+
+    transition: { duration: 1 },
+  };
+
   return (
-    <header>
+    <motion.header {...animationSettings}>
       <h1 className="h1Header">BRUNO GRECCHI</h1>
 
       <nav>
         <button onClick={handleClick}> MENU </button>
 
         {toggleMenu && (
-          <ul className="navUL">
+          <motion.ul {...animationSettings} className="navUL">
             <p className="stroke selectedWorks">SELECTED WORKS 2024</p>
 
             <button onClick={handleClick} className="closeButton">
@@ -38,9 +46,9 @@ export default function Nav() {
             <li>
               <span className="number">05</span>CONTACT
             </li>
-          </ul>
+          </motion.ul>
         )}
       </nav>
-    </header>
+    </motion.header>
   );
 }

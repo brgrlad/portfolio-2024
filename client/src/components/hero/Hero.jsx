@@ -1,5 +1,6 @@
 import "./hero.css";
 import arrowDown from "../../assets/img/icons/down-right.png";
+// import motion from "framer-motion";
 
 export default function Hero() {
   return (
@@ -14,7 +15,6 @@ export default function Hero() {
       <div className="row">
         <h3 className="stroke marginLeft">BASED IN DUBLIN</h3>
 
-        {/* <p className="scrollDown">SCROLL DOWN</p> */}
         <img src={arrowDown} className="scrollDown arrowDown"></img>
       </div>
     </section>
