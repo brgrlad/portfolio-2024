@@ -5,10 +5,15 @@
   justify-content: center;
   align-items: center;
   padding: 15px 0;
+  overflow: hidden;
 }
-.marqueeh2 {
+.marqueeWrapper h2 {
   font-weight: 900;
   font-size: 1.5rem;
-
   color: rgb(17, 17, 17);
+}
+
+.marqueeWrapper img {
+  width: 2rem;
+  filter: invert(100%);
 }

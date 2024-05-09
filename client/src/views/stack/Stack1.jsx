@@ -1,5 +1,6 @@
 import "./stack1.css";
-import Marquee from "../../components/marquee/Marquee";
+import Marquee1 from "../../components/marquee/Marquee";
+import { motion } from "framer-motion";
 
 const logos = [
   "20Javascript.svg",
@@ -17,18 +18,32 @@ const logos = [
 ];
 
 export default function Stack1() {
+  const fromTheTop = {
+    initial: { opacity: 0, scale: 0.9 },
+    transition: { duration: 2 },
+    whileInView: { opacity: 1, scale: 1 },
+  };
+
   return (
     <section className="tech-stack">
-      <Marquee />
+      <Marquee1 />
 
       <div className="logosWrapper">
         <div className="h3Wrapper">
           <h3>STUFF I WORK WITH</h3>
-          <p>FRONT TO BACK-END, AND ANYTHING IN BETWEEN</p>
+          <p>FRONT TO BACK-END, AND ANYTHING IN BETWEEN !</p>
         </div>
 
         {logos.map((fileName, index) => (
-          <div className="logoCard1" key={index}>
+          <motion.div
+            className="logoCard1"
+            {...fromTheTop}
+            transition={{
+              ...fromTheTop.transition,
+              delay: index / 5,
+            }}
+            key={index}
+          >
             <img
               key={index}
               src={"../../../public/logos/" + fileName}
@@ -38,7 +53,7 @@ export default function Stack1() {
             <p className="logoName">
               {fileName.substring(2, fileName.length - 4)}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

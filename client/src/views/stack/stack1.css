@@ -23,10 +23,9 @@
   align-items: center;
 
   padding: 10px;
-  /* margin: 10px 20px; */
+
   width: 25%;
   height: 150px;
-  /* border: 1px solid red; */
 
   /* filter: drop-shadow(-4px 3px 3px #0000006c); */
   /* backdrop-filter: blur(1.9px);
@@ -56,8 +55,8 @@
   left: 22%;
 }
 .logoCard1 img {
-  height: 40px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   filter: grayscale(100%) invert(100%) brightness(300%);
 }
 

@@ -17,7 +17,6 @@ export default function About() {
     initial: { y: 200 },
     transition: { duration: 1.5 },
     whileInView: { y: 0 },
-
     viewport: { margin: "100px" },
   };
 
