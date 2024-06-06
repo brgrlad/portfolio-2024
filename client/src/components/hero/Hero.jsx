@@ -3,17 +3,6 @@ import arrowDown from "../../assets/img/icons/down-right.png";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  // const animationSettings = {
-  //   initial: { opacity: 0, x: -1000 },
-  //   animate: { opacity: 1, x: 0 },
-  //   transition: { duration: 1 },
-  // };
-  // const scaleUp = {
-  //   initial: { scale: 0 },
-  //   animate: { scale: 1 },
-  //   transition: { duration: 1 },
-  // };
-
   const attention = {
     initial: { opacity: 0, scale: 0.8 },
     animate: { opacity: 1, scale: 1 },

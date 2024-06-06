@@ -24,8 +24,8 @@ const logos = [
 export default function Stack1() {
   const fromTheTop = {
     initial: { opacity: 0, scale: 0.9 },
-    transition: { duration: 2 },
     whileInView: { opacity: 1, scale: 1 },
+    viewport: { once: true },
   };
 
   return (
