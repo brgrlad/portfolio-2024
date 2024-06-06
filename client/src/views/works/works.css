@@ -101,6 +101,7 @@
   float: right;
   margin-left: 10px;
   color: var(--faded-black);
+  background-color: var(--light-gray);
 }
 
 .openArrow {
@@ -154,7 +155,6 @@ button > img {
 
   .buttons button {
     margin: 30px 0 10px 10px;
-    background-color: var(--light-gray);
   }
 
   .projectDescription,
