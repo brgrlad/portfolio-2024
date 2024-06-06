@@ -1,15 +1,16 @@
 import "./nav.css";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { useState } from "react";
 
 export default function Nav() {
   const animationSettings = {
-    initial: { opacity: 1, y: -1200 },
+    initial: { opacity: 0.5, y: -1200 },
     animate: { opacity: 1, y: 0 },
-
-    transition: { duration: 0.6 },
+    exit: { opacity: 0, y: -1200 },
+    transition: { duration: 1 },
   };
+
   let [toggleMenu, setToggleMenu] = useState(false);
 
   const handleClick = () => {
@@ -23,30 +24,44 @@ export default function Nav() {
       <nav>
         <button onClick={handleClick}> MENU </button>
 
-        {toggleMenu && (
-          <motion.ul {...animationSettings} className="navUL">
-            <p className="stroke selectedWorks">SELECTED WORKS 2024</p>
+        <AnimatePresence>
+          {toggleMenu && (
+            <motion.ul {...animationSettings} className="navUL">
+              <p className="stroke selectedWorks">SELECTED WORKS 2024</p>
 
-            <button onClick={handleClick} className="closeButton">
-              CLOSE
-            </button>
-            <li>
-              <span className="number">01</span>HOME
-            </li>
-            <li>
-              <span className="number">02</span>ABOUT
-            </li>
-            <li>
-              <span className="number">03</span>TECH-STACK
-            </li>
-            <li>
-              <span className="number">04</span>WORKS
-            </li>
-            <li>
-              <span className="number">05</span>CONTACT
-            </li>
-          </motion.ul>
-        )}
+              <button onClick={handleClick} className="closeButton">
+                CLOSE
+              </button>
+
+              <li>
+                <a href="#home" onClick={handleClick}>
+                  <span className="number">01</span> HOME
+                </a>
+              </li>
+
+              <li>
+                <a href="#about">
+                  <span className="number">02</span> ABOUT
+                </a>
+              </li>
+              <li>
+                <a href="#tech-stack">
+                  <span className="number">02</span> TECH-STACK
+                </a>
+              </li>
+              <li>
+                <a href="#works">
+                  <span className="number">02</span> WORKS
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <span className="number">02</span> CONTACT
+                </a>
+              </li>
+            </motion.ul>
+          )}
+        </AnimatePresence>
       </nav>
     </motion.header>
   );

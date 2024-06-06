@@ -12,6 +12,10 @@
 * {
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /*
     Typographic tweaks!
     3. Add accessible line-height
@@ -69,6 +73,11 @@ li {
 
 p {
   margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 /*
     8. Create a root stacking context

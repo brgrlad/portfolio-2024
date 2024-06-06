@@ -10,7 +10,7 @@ export default function Home() {
     transition: { duration: 2 },
   };
   return (
-    <motion.div {...scaleUp} className="homeWrapper">
+    <motion.div {...scaleUp} className="homeWrapper" id="home">
       <Nav />
       <Hero />
     </motion.div>

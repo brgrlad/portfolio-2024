@@ -36,7 +36,7 @@ export default function Works() {
 
   return (
     <section className="works" id="works">
-      <motion.div className="worksHeader" {...fadeInAnimation}>
+      <motion.div className="worksHeader" id="works" {...fadeInAnimation}>
         <p>
           Selected works as of May 2024. A mix of front-end, full-stack and
           mobile applications. All idealized and coded by me, with love, and

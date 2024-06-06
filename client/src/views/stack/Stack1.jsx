@@ -29,7 +29,7 @@ export default function Stack1() {
   };
 
   return (
-    <section className="tech-stack">
+    <section className="tech-stack" id="tech-stack">
       <Marquee1 />
 
       <div className="logosWrapper">
