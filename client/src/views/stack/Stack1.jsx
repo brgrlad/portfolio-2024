@@ -5,17 +5,20 @@ import { motion } from "framer-motion";
 const logos = [
   "01Javascript.svg",
   "02React.svg",
+  "14Next.svg",
   "03HTML.svg",
   "04CSS.svg",
+  "10SaSS.svg",
+  "08Framer.svg",
+  "09Bootstrap.svg",
+
+  "15Tailwind.svg",
   "05Node.svg",
   "06Mongo.svg",
   "07Express.svg",
-  "08Framer.svg",
-  "09Bootstrap.svg",
-  "10SaSS.svg",
+
   "11GitHub.svg",
   "12Postman.svg",
-  "13Vite.png",
 ];
 
 export default function Stack1() {
