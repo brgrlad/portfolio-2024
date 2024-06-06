@@ -40,22 +40,22 @@ export default function Nav() {
               </li>
 
               <li>
-                <a href="#about">
+                <a href="#about" onClick={handleClick}>
                   <span className="number">02</span> ABOUT
                 </a>
               </li>
               <li>
-                <a href="#tech-stack">
+                <a href="#tech-stack" onClick={handleClick}>
                   <span className="number">02</span> TECH-STACK
                 </a>
               </li>
               <li>
-                <a href="#works">
+                <a href="#works" onClick={handleClick}>
                   <span className="number">02</span> WORKS
                 </a>
               </li>
               <li>
-                <a href="#contact">
+                <a href="#contact" onClick={handleClick}>
                   <span className="number">02</span> CONTACT
                 </a>
               </li>

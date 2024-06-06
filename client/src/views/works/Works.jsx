@@ -6,7 +6,11 @@ import gearIcon from "../../assets/img/icons/engine.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-let initialState = { drumMachine: false, pinkPiranha: false };
+let initialState = {
+  drumMachine: false,
+  pinkPiranha: false,
+  taraShipping: false,
+};
 
 const gearIconAnimation = {
   initial: { rotate: 0 },
@@ -18,7 +22,7 @@ const gearIconAnimation = {
 const fadeInAnimation = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
-  transition: { duration: 2, exit: false },
+  transition: { duration: 0.5 },
   viewport: { once: true },
 };
 
@@ -70,7 +74,7 @@ export default function Works() {
       <ul className="worksUL">
         <motion.li
           {...fadeInAnimation}
-          transition={{ ...fadeInAnimation.transition, delay: 1.5 }}
+          transition={{ ...fadeInAnimation.transition, delay: 0.5 }}
         >
           <div className="projectTitle">
             <p> DRUM MACHINE</p>
@@ -130,7 +134,7 @@ export default function Works() {
 
         <motion.li
           {...fadeInAnimation}
-          transition={{ ...fadeInAnimation.transition, delay: 1.5 }}
+          transition={{ ...fadeInAnimation.transition, delay: 1 }}
         >
           <div className="projectTitle">
             <p> PINK PIRANHA</p>
@@ -149,6 +153,66 @@ export default function Works() {
           </div>
 
           {isClicked.pinkPiranha && (
+            <motion.div className="project" {...fadeInAnimation}>
+              <div className="projectDescription">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
+                  nulla perferendis eligendi. Lorem ipsum dolor, sit amet
+                  consectetur
+                  <span className="newLine">
+                    adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Unde, minus. quod saepe quam
+                    consequuntur vero aut! Fuga adipisci nulla perferendis
+                    eligendi.
+                  </span>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, minu quod saepe quam consequuntur vero aut! Fuga
+                  adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Unde, minu quod saepe quam
+                  consequuntur vero aut! Fuga adipisci nulla perferendis
+                  eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit. Unde, minu
+                </p>
+
+                <div className="buttons">
+                  <button>
+                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                  </button>
+                  <button>
+                    VIEW LIVE
+                    <img src={arrowSide} className="openArrow" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              {/*add project img here  */}
+              <img src={projectMockup} className="projectImage"></img>
+            </motion.div>
+          )}
+        </motion.li>
+
+        <motion.li
+          {...fadeInAnimation}
+          transition={{ ...fadeInAnimation.transition, delay: 1.5 }}
+        >
+          <div className="projectTitle">
+            <p> TARA SHIPPING </p>
+            <img
+              src={ArrowUpSolid}
+              className="arrowUp"
+              style={{
+                transform: isClicked.taraShipping
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)",
+                transition: "transform .5",
+              }}
+              alt="Arrow Up"
+              onClick={() => handleClick("taraShipping")}
+            />
+          </div>
+
+          {isClicked.taraShipping && (
             <motion.div className="project" {...fadeInAnimation}>
               <div className="projectDescription">
                 <p>
