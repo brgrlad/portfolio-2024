@@ -11,13 +11,13 @@ export default function About() {
     initial: { opacity: 0 },
     transition: { duration: 3 },
     whileInView: { opacity: 1 },
-    viewport: { margin: "-100px" },
+    viewport: { margin: "-100px", once: true },
   };
   const photoAnimation = {
     initial: { y: 200 },
     transition: { duration: 1.5 },
     whileInView: { y: 0 },
-    viewport: { margin: "100px" },
+    viewport: { margin: "100px", once: true },
   };
 
   return (

@@ -12,12 +12,14 @@ const gearIconAnimation = {
   initial: { rotate: 0 },
   whileInView: { rotate: "360deg" },
   transition: { duration: 2, type: "easeOut" },
+  viewport: { once: true },
 };
 
 const fadeInAnimation = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
   transition: { duration: 2, exit: false },
+  viewport: { once: true },
 };
 
 export default function Works() {
