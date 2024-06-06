@@ -15,27 +15,19 @@ header {
 }
 
 h1 {
-  /* background-color: transparent; */
   font-size: 20px;
   font-style: italic;
   color: var(--text-white);
-  /* padding: 0 20px;
-  border: 2px solid rgb(151, 151, 151);
-
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 80px; */
 
   mix-blend-mode: difference;
 }
 nav {
   height: 50px;
+}
 
-  /* background-color: black;
-  backdrop-filter: blur(1.9px);
-  -webkit-backdrop-filter: blur(1.9px);
-  border-radius: 80px;
-  border: 2px solid rgba(0, 0, 0, 0.286); */
+a {
+  font-size: 4rem;
+  white-space: nowrap;
 }
 
 .navUL {
@@ -43,7 +35,6 @@ nav {
   position: fixed;
   display: flex;
   align-items: end;
-
   flex-direction: column;
   justify-content: end;
   width: 100vw;
@@ -55,11 +46,9 @@ nav {
   color: var(--light-gray);
   background-color: rgba(0, 0, 0, 0.902);
   font-size: 4rem;
-
   background-position: center;
   background-repeat: repeat;
   background-size: 1%;
-
   overflow: hidden;
 
   backdrop-filter: blur(20px);
@@ -91,28 +80,17 @@ nav {
 .navUL li {
   line-height: 3rem;
   border-radius: 60%;
-
   z-index: 3;
-
   text-align: right;
   font-weight: 900;
   justify-content: center;
-
   align-items: center;
 }
-
-/* .h1Icon img {
-
-  opacity: 50%;
-  display: inline;
-  width: 2rem;
-
-} */
 
 .number {
   display: inline;
   font-size: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .navUL img {
@@ -150,4 +128,14 @@ button {
 button:hover {
   cursor: pointer;
   opacity: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  a {
+    font-size: 2.5rem;
+  }
+
+  .navUL li {
+    line-height: 1.7rem;
+  }
 }
