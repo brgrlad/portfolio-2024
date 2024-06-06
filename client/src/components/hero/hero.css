@@ -98,7 +98,7 @@ h3,
   z-index: 3;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   h2,
   h3,
   .headerP {
@@ -110,10 +110,14 @@ h3,
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .hero h2,
   .hero h3 {
     line-height: 70%;
+  }
+
+  .creative {
+    height: 50px;
   }
 
   .creative p {
@@ -126,6 +130,7 @@ h3,
   .hero {
     width: 90%;
   }
+
   h2,
   h3,
   .headerP {
@@ -149,6 +154,7 @@ h3,
   .hero {
     width: 90%;
   }
+
   h2,
   h3,
   .headerP {
@@ -158,5 +164,9 @@ h3,
 
   .headerP {
     font-size: 8vw;
+  }
+
+  .creative {
+    height: 30px;
   }
 }
