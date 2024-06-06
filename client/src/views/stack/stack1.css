@@ -1,19 +1,17 @@
 .tech-stack {
   width: 100vw;
-  height: 100vh;
-}
-
-.logosWrapper {
   background-image: url(../../assets/img/grids/ooorganize-3.svg);
   background-repeat: repeat;
   background-size: 20%;
   background-color: var(--primary-black);
+}
+
+.logosWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-  padding: 40px 40px;
+  padding: 50px 40px;
 }
 
 .logoCard1 {
