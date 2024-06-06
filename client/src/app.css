@@ -16,7 +16,7 @@
 
 body {
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   max-width: 1600px;
   color: var(--text-white);
 }

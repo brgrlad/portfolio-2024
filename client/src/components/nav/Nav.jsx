@@ -5,10 +5,10 @@ import { useState } from "react";
 
 export default function Nav() {
   const animationSettings = {
-    initial: { opacity: 1, y: -2000 },
+    initial: { opacity: 1, y: -1200 },
     animate: { opacity: 1, y: 0 },
 
-    transition: { duration: 1, delay: 1, type: "spring" },
+    transition: { duration: 0.6 },
   };
   let [toggleMenu, setToggleMenu] = useState(false);
 
