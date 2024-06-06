@@ -1,9 +1,7 @@
 .works {
   width: 100vw;
-
   padding: 20px 40px;
   color: var(--faded-black);
-
   background-color: var(--light-gray);
 }
 
@@ -24,25 +22,22 @@
   max-height: 6rem;
 }
 
-.starWrapper {
+.gearIconWrapper {
   text-align: left;
 }
-.star {
-  width: 10%;
+.gearIcon {
+  width: 8%;
   margin: auto;
   display: inline;
-
-  filter: invert(100%);
-  margin-right: 10px;
+  margin-right: 5px;
   margin-bottom: 10px;
 }
 
 .worksHeader p {
-  width: 55%;
+  width: 505%;
   font-size: 20px;
   margin-top: 20px;
   text-align: left;
-  /* border: 1px solid red; */
 }
 
 .works ul {
@@ -52,6 +47,7 @@
 }
 
 .works li {
+  min-height: 70px;
   display: flex;
   flex-direction: column;
   border-bottom: 1x solid var(--faded-black);
@@ -93,9 +89,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 20px 20px;
-
   background-color: rgb(158, 158, 158);
-
   border-radius: 10px;
 }
 

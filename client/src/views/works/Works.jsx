@@ -2,72 +2,92 @@ import "./works.css";
 import ArrowUpSolid from "../../assets/img/icons/arrow-up-solid.svg";
 import projectMockup from "../../assets/img/projects-mockups/1.jpg";
 import arrowSide from "../../assets/img/icons/next.png";
-import sunIcon from "../../assets/img/icons/sun.svg";
-// import newImg from "../../assets/img/icons/pattern.png";
+import gearIcon from "../../assets/img/icons/engine.png";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
+let initialState = { drumMachine: false, pinkPiranha: false };
+
+const gearIconAnimation = {
+  initial: { rotate: 0 },
+  whileInView: { rotate: "360deg" },
+  transition: { duration: 2, type: "easeOut" },
+};
+
+const fadeInAnimation = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  transition: { duration: 2, exit: false },
+};
 
 export default function Works() {
-  let [isClicked, setIsClicked] = useState(false);
+  let [isClicked, setIsClicked] = useState(initialState);
 
-  const handleClick = () => {
-    setIsClicked((prev) => !prev);
+  // SHOW/HIDE PROJECT DESCRIPTION
+  const handleClick = (property) => {
+    setIsClicked((prevState) => ({
+      ...prevState,
+      [property]: !prevState[property],
+    }));
+    // setIsClicked((prev) => !prev);
   };
 
   return (
     <section className="works" id="works">
-      <div className="worksHeader">
+      <motion.div className="worksHeader" {...fadeInAnimation}>
         <p>
           Selected works as of May 2024. A mix of front-end, full-stack and
           mobile applications. All idealized and coded by me, with love, and
           long hours of work!
         </p>
         <h2>WORKS</h2>
+      </motion.div>
+
+      <div className="gearIconWrapper">
+        <motion.img
+          src={gearIcon}
+          {...gearIconAnimation}
+          transition={{ ...gearIconAnimation.transition, delay: 1 }}
+          className="gearIcon"
+        />
+        <motion.img
+          src={gearIcon}
+          {...gearIconAnimation}
+          transition={{ ...gearIconAnimation.transition, delay: 1.5 }}
+          className="gearIcon"
+        />
+        <motion.img
+          src={gearIcon}
+          {...gearIconAnimation}
+          transition={{ ...gearIconAnimation.transition, delay: 2 }}
+          className="gearIcon"
+        />
       </div>
 
-      <div className="starWrapper">
-        <img src={sunIcon} className="star" />
-        <img src={sunIcon} className="star" />
-        <img src={sunIcon} className="star" />
-      </div>
-
+      {/* WORKS UL */}
       <ul className="worksUL">
-        <li>
+        <motion.li
+          {...fadeInAnimation}
+          transition={{ ...fadeInAnimation.transition, delay: 1.5 }}
+        >
           <div className="projectTitle">
             <p> DRUM MACHINE</p>
             <img
               src={ArrowUpSolid}
               className="arrowUp"
+              style={{
+                transform: isClicked.drumMachine
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)",
+                transition: "transform .5",
+              }}
               alt="Arrow Up"
-              onClick={handleClick}
-            />
-          </div>
-        </li>
-
-        <li>
-          <div className="projectTitle">
-            <p> DRUM MACHINE</p>
-            <img
-              src={ArrowUpSolid}
-              className="arrowUp"
-              alt="Arrow Up"
-              onClick={handleClick}
-            />
-          </div>
-        </li>
-
-        <li>
-          <div className="projectTitle">
-            <p> DRUM MACHINE</p>
-            <img
-              src={ArrowUpSolid}
-              className="arrowUp"
-              alt="Arrow Up"
-              onClick={handleClick}
+              onClick={() => handleClick("drumMachine")}
             />
           </div>
 
-          {isClicked && (
-            <div className="project">
+          {isClicked.drumMachine && (
+            <motion.div className="project" {...fadeInAnimation}>
               <div className="projectDescription">
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -98,20 +118,73 @@ export default function Works() {
                     <img src={arrowSide} className="openArrow" alt="" />
                   </button>
                 </div>
-                {/* 
-                <p className="tags">
-                  <span className="tag">HTML</span>
-                  <span className="tag">CSS</span>{" "}
-                  <span className="tag">FRONT END</span>{" "}
-                  <span className="tag">MONGO</span>
-                </p> */}
               </div>
 
               {/*add project img here  */}
               <img src={projectMockup} className="projectImage"></img>
-            </div>
+            </motion.div>
           )}
-        </li>
+        </motion.li>
+
+        <motion.li
+          {...fadeInAnimation}
+          transition={{ ...fadeInAnimation.transition, delay: 1.5 }}
+        >
+          <div className="projectTitle">
+            <p> PINK PIRANHA</p>
+            <img
+              src={ArrowUpSolid}
+              className="arrowUp"
+              style={{
+                transform: isClicked.pinkPiranha
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)",
+                transition: "transform .5",
+              }}
+              alt="Arrow Up"
+              onClick={() => handleClick("pinkPiranha")}
+            />
+          </div>
+
+          {isClicked.pinkPiranha && (
+            <motion.div className="project" {...fadeInAnimation}>
+              <div className="projectDescription">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
+                  nulla perferendis eligendi. Lorem ipsum dolor, sit amet
+                  consectetur
+                  <span className="newLine">
+                    adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Unde, minus. quod saepe quam
+                    consequuntur vero aut! Fuga adipisci nulla perferendis
+                    eligendi.
+                  </span>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, minu quod saepe quam consequuntur vero aut! Fuga
+                  adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Unde, minu quod saepe quam
+                  consequuntur vero aut! Fuga adipisci nulla perferendis
+                  eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit. Unde, minu
+                </p>
+
+                <div className="buttons">
+                  <button>
+                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                  </button>
+                  <button>
+                    VIEW LIVE
+                    <img src={arrowSide} className="openArrow" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              {/*add project img here  */}
+              <img src={projectMockup} className="projectImage"></img>
+            </motion.div>
+          )}
+        </motion.li>
 
         {/*------------- * project -------------- */}
       </ul>

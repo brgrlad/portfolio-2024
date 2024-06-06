@@ -1,5 +1,6 @@
 .tech-stack {
   width: 100vw;
+  height: 100vh;
 }
 
 .logosWrapper {
@@ -21,16 +22,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   padding: 10px;
-
   width: 25%;
   height: 150px;
-
-  /* filter: drop-shadow(-4px 3px 3px #0000006c); */
-  /* backdrop-filter: blur(1.9px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 10px; */
+  margin: 15px 0;
 }
 
 .h3Wrapper {
@@ -55,8 +50,9 @@
   left: 22%;
 }
 .logoCard1 img {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+
   filter: grayscale(100%) invert(100%) brightness(300%);
 }
 

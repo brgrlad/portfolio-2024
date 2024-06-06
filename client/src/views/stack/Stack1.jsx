@@ -3,7 +3,7 @@ import Marquee1 from "../../components/marquee/Marquee";
 import { motion } from "framer-motion";
 
 const logos = [
-  "20Javascript.svg",
+  "01Javascript.svg",
   "02React.svg",
   "03HTML.svg",
   "04CSS.svg",
@@ -15,6 +15,7 @@ const logos = [
   "10SaSS.svg",
   "11GitHub.svg",
   "12Postman.svg",
+  "13Vite.png",
 ];
 
 export default function Stack1() {
