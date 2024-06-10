@@ -8,8 +8,10 @@ export default function Marquee1() {
     <>
       <Marquee autoFill={true} speed={30}>
         <div className="marqueeWrapper">
-          <h2>TECH-STACK AND SKILLS SET</h2>
-          <img src={sunIcon} />
+          <h2>TECH STACK</h2>
+          <img src={sunIcon} className="sunIcon" />
+          <h2>TECHNOLOGIES & TOOLS</h2>
+          <img src={sunIcon} className="sunIcon" />
         </div>
       </Marquee>
     </>

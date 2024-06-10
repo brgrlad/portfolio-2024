@@ -62,11 +62,12 @@ a {
   font-weight: 00;
   letter-spacing: -20px;
   font-size: 17rem;
+
   line-height: 11rem;
   text-align: left;
   font-style: italic;
 
-  -webkit-text-stroke-color: rgba(170, 170, 170, 0.117);
+  -webkit-text-stroke-color: rgba(170, 170, 170, 0.307);
 }
 
 .navUL li:hover {
