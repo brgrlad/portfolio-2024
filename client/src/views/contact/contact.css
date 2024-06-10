@@ -13,7 +13,7 @@
   background-size: 70%;
   background-position: center; */
 }
-
+/* 
 #contact:after {
   content: "";
   display: block;
@@ -31,8 +31,10 @@
 
   background-repeat: repeat;
   background-size: 10%;
-  /* background-color: rgba(0, 0, 0, 0.562); */
-}
+
+} */
+
+/* background-color: rgba(0, 0, 0, 0.562); */
 
 .marquee {
   font-weight: 500;
@@ -100,7 +102,7 @@ footer {
   /* color: greenyellow; */
 }
 
-@keyframes noise {
+/* @keyframes noise {
   0%,
   100% {
     background-position: 0 0;
@@ -141,4 +143,4 @@ footer {
   90% {
     background-position: -10% 10%;
   }
-}
+} */

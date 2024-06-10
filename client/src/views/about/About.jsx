@@ -36,7 +36,9 @@ export default function About() {
         />
 
         <div className="aboutText1">
-          <motion.p {...enterAnimation}>HEY, HELLO THERE !</motion.p>
+          <motion.p {...enterAnimation} className="heyHello">
+            HEY, HELLO THERE !
+          </motion.p>
           <motion.p {...enterAnimation}>
             I`M A WEB DEVELOPER BASED IN IRELAND WITH A STRONG FOUNDATION IN
             <span className="emphasis"> JAVASCRIPT </span> AND EXPERTISE IN
