@@ -41,8 +41,9 @@
   font-weight: 900;
   line-height: 70px;
   letter-spacing: 0.1px;
-  z-index: 3;
+  z-index: 2;
   font-size: 8.5rem;
+  mix-blend-mode: difference;
 }
 
 .profileIcon {
@@ -55,43 +56,71 @@
 }
 
 .profilePic {
-  width: 30vw;
+  /* width: 30vw;
+  aspect-ratio: 1/1; */
+  height: 400px;
+  width: 400px;
   position: absolute;
-  top: 17%;
+  top: 20%;
   border-radius: 50%;
   z-index: 0;
 }
 
-.aboutText1 {
-  font-weight: 100;
-  text-align: right;
-  color: white;
-  width: 400px;
-  font-size: 20px;
-  position: absolute;
-  left: 25%;
-  left: 260px;
-  top: 55%;
-  padding: 20px;
-  border-radius: 10px;
+.grecchi {
+  z-index: 2;
+}
+
+.profilePic2 {
+  width: 30vw;
+  height: 30vw;
+  z-index: 1;
+  border-radius: 5px;
+
+  /* border-radius: 50%; */
+  background-image: url(../../assets/img/portrait1.jpeg);
+  /* background-size: cover; */
+  background-position: left;
   background-size: cover;
 }
 
+.aboutText1 {
+  font-weight: 400;
+  text-align: left;
+  color: white;
+  width: 340px;
+  font-size: 20px;
+  position: absolute;
+
+  left: 35%;
+  left: 270px;
+  top: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  z-index: 2;
+}
+
 .aboutText2 {
-  font-size: 16px;
+  z-index: 2;
+  font-size: 18px;
   width: 350px;
   position: absolute;
-  right: 25%;
-  right: 260px;
+
+  right: 200px;
   text-align: left;
   font-weight: 100;
   top: 65%;
+  font-weight: 200;
 }
 
 .emphasis {
-  text-decoration: overline;
-  color: inherit;
-  font-weight: 500;
+  padding: 0 5px;
+  font-weight: 900;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(164, 212, 94);
+
+  font-weight: 700;
   font-size: 17px;
 }
 

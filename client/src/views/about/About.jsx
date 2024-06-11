@@ -1,7 +1,8 @@
 import "./about.css";
+
 // import profilePic from "../../assets/img/portrait.webp";
-import profilePic from "../../assets/img/portrait.webp";
-// import profileIcon from "../../assets/img/asset-2.svg";
+// import profilePic from "../../assets/img/portrait1.jpeg";
+
 import starIcon from "../../assets/img/icons/star.svg";
 
 import { motion } from "framer-motion";
@@ -29,11 +30,13 @@ export default function About() {
           BRUNO GRECCHI
         </motion.h3>
 
-        <motion.img
+        <motion.div className="profilePic2" {...photoAnimation}></motion.div>
+
+        {/* <motion.img
           {...photoAnimation}
           src={profilePic}
           className="profilePic"
-        />
+        /> */}
 
         <div className="aboutText1">
           <motion.p {...enterAnimation} className="heyHello">
@@ -51,17 +54,16 @@ export default function About() {
           <motion.p {...enterAnimation}>
             TAKING INSPIRATION FROM CUTTING-EDGE DESIGN AND ALL THINGS CREATIVE,
             I LOVE BUILDING APPLICATIONS THAT NOT ONLY LOOK COOL BUT ALSO FOLLOW
-            THE BEST PRACTICES IN <span className="emphasis">SEO </span>AND
-            <span className="emphasis"> RESPONSIVE DESIGN. </span>
+            THE BEST PRACTICES IN SEO AND RESPONSIVE DESIGN.
           </motion.p>
 
-          <motion.p {...enterAnimation}>
+          {/* <motion.p {...enterAnimation}>
             NINE YEARS OF PREVIOUS EXPERIENCE IN{" "}
             <span className="emphasis"> DIGITAL MARKETING </span> ALSO GIVE ME A
             PRACTICAL PERSPECTIVE ON THE ONLINE LANDSCAPE, WHERE I UTILISE MY
             KNOW-HOW TO ENHANCE BRAND ENGAGEMENT AND DRIVE REVENUE TO MY
             CLIENTS.
-          </motion.p>
+          </motion.p> */}
         </div>
 
         <motion.img
