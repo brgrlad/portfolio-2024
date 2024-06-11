@@ -110,7 +110,7 @@
   text-align: left;
   font-weight: 100;
   top: 65%;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .emphasis {
@@ -129,22 +129,26 @@
     font-size: 6rem;
   }
 
-  .profilePic {
+  .profilePic2 {
+    margin-top: 50px;
     width: 600px;
+    height: 600px;
     position: static;
   }
 
   .aboutText1 {
-    top: 670px;
+    top: 850px;
     width: 300px;
-    left: 230px;
+    left: 190px;
     font-size: 1.5rem;
+    text-align: right;
   }
   .aboutText2 {
-    top: 790px;
-    right: 200px;
-    width: 350px;
-    font-size: 1.5rem;
+    top: 950px;
+    right: 190px;
+    width: 300px;
+    font-size: 1.5em;
+    text-align: left;
   }
 
   .profileIcon {
@@ -157,10 +161,11 @@
   .about h3 {
     font-size: 5rem;
   }
-  .profilePic {
-    margin-top: 20px;
-    width: 380px;
-    position: static;
+
+  .profilePic2 {
+    height: 45%;
+    width: 65%;
+    margin-bottom: 50px;
   }
 
   .aboutText1,
@@ -168,9 +173,13 @@
     position: static;
     word-wrap: break-word;
     text-align: center;
-    font-size: 1.1rem;
-    width: 60%;
-    border: 2px solid pink;
+    font-size: 1.4rem;
+    width: 70%;
+  }
+
+  .profileIcon {
+    top: 300px;
+    z-index: 10;
   }
 }
 
@@ -205,9 +214,13 @@
 }
 
 @media screen and (max-width: 430px) {
-  .profilePic {
-    margin-top: 20px;
+  .about h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .profilePic2 {
     width: 300px;
+    height: 300px;
     margin-bottom: 0;
     position: static;
   }
@@ -228,6 +241,5 @@
     text-align: right;
     font-size: 0.9rem;
     width: 82%;
-    z-index: 10;
   }
 }
