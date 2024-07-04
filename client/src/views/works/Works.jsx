@@ -4,7 +4,7 @@ import projectMockup from "../../assets/img/projects-mockups/1.jpg";
 import arrowSide from "../../assets/img/icons/next.png";
 import gearIcon from "../../assets/img/icons/engine.png";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 let initialState = {
   drumMachine: false,
@@ -20,10 +20,14 @@ const gearIconAnimation = {
 };
 
 const fadeInAnimation = {
-  initial: { opacity: 0 },
-  whileInView: { opacity: 1 },
-  transition: { duration: 0.5 },
+  initial: { opacity: 0, scale: 0 },
+  whileInView: { opacity: 1, scale: 1 },
+  transition: { duration: 0.7, ease: "easeInOut", type: "spring" },
   viewport: { once: true },
+
+  // open: { opacity: 1, height: "auto", scale: 1 },
+  // closed: { opacity: 0, height: 0, scale: 0.9 },
+  // transition: { duration: 0.5, ease: "easeInOut" },
 };
 
 export default function Works() {
@@ -41,7 +45,7 @@ export default function Works() {
   return (
     <section className="works" id="works">
       <motion.div className="worksHeader" id="works" {...fadeInAnimation}>
-        <p>
+        <p className="worksIntro">
           Selected works as of May 2024. A mix of front-end, full-stack and
           mobile applications. All idealized and coded by me, with love, and
           long hours of work!
@@ -155,25 +159,36 @@ export default function Works() {
           {isClicked.pinkPiranha && (
             <motion.div className="project" {...fadeInAnimation}>
               <div className="projectDescription">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
-                  nulla perferendis eligendi. Lorem ipsum dolor, sit amet
-                  consectetur
-                  <span className="newLine">
-                    adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit. Unde, minus. quod saepe quam
-                    consequuntur vero aut! Fuga adipisci nulla perferendis
-                    eligendi.
-                  </span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Unde, minu quod saepe quam consequuntur vero aut! Fuga
-                  adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Unde, minu quod saepe quam
-                  consequuntur vero aut! Fuga adipisci nulla perferendis
-                  eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Unde, minu
-                </p>
+                <div className="projectText">
+                  <h4>PROJECT HIGHLIGHTS</h4>
+
+                  <ul className="projectStack">
+                    <li> REACT </li>
+                    <li> TAILWIND </li>
+                    <li> NEXT JS</li>
+                  </ul>
+
+                  <p>
+                    For this project I led the front-end development,
+                    translating a designer`s layout into a fully functional
+                    website.
+                  </p>
+                  <p>
+                    I opted to use Next.js due to its server-side rendering
+                    capabilities to boost SEO. For the UI components, I chose
+                    Tailwind CSS for efficient and scalable styling.
+                  </p>
+                  <p>
+                    One of the main challenges was adapting the design, which
+                    was provided only in a desktop format. To address this, I
+                    created responsive versions to ensure a seamless experience
+                    across all devices.
+                  </p>
+                  <p>
+                    Finally, I used Framer Motion for a bit of animation and
+                    movement to enhance the user experience.
+                  </p>
+                </div>
 
                 <div className="buttons">
                   <button>
@@ -211,45 +226,47 @@ export default function Works() {
               onClick={() => handleClick("taraShipping")}
             />
           </div>
+          <AnimatePresence>
+            {isClicked.taraShipping && (
+              <motion.div className="project" {...fadeInAnimation}>
+                <div className="projectDescription">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
+                    nulla perferendis eligendi. Lorem ipsum dolor, sit amet
+                    consectetur
+                    <span className="newLine">
+                      adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
+                      consectetur adipisicing elit. Unde, minus. quod saepe quam
+                      consequuntur vero aut! Fuga adipisci nulla perferendis
+                      eligendi.
+                    </span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde, minu quod saepe quam consequuntur vero aut! Fuga
+                    adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit. Unde, minu quod saepe
+                    quam consequuntur vero aut! Fuga adipisci nulla perferendis
+                    eligendi. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Unde, minu
+                  </p>
 
-          {isClicked.taraShipping && (
-            <motion.div className="project" {...fadeInAnimation}>
-              <div className="projectDescription">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
-                  nulla perferendis eligendi. Lorem ipsum dolor, sit amet
-                  consectetur
-                  <span className="newLine">
-                    adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit. Unde, minus. quod saepe quam
-                    consequuntur vero aut! Fuga adipisci nulla perferendis
-                    eligendi.
-                  </span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Unde, minu quod saepe quam consequuntur vero aut! Fuga
-                  adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Unde, minu quod saepe quam
-                  consequuntur vero aut! Fuga adipisci nulla perferendis
-                  eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Unde, minu
-                </p>
-
-                <div className="buttons">
-                  <button>
-                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
-                  </button>
-                  <button>
-                    VIEW LIVE
-                    <img src={arrowSide} className="openArrow" alt="" />
-                  </button>
+                  <div className="buttons">
+                    <button>
+                      SOURCE CODE{" "}
+                      <img src="../../../public/logos/11github.svg" />
+                    </button>
+                    <button>
+                      VIEW LIVE
+                      <img src={arrowSide} className="openArrow" alt="" />
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              {/*add project img here  */}
-              <img src={projectMockup} className="projectImage"></img>
-            </motion.div>
-          )}
+                {/*add project img here  */}
+                <img src={projectMockup} className="projectImage"></img>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </motion.li>
 
         {/*------------- * project -------------- */}

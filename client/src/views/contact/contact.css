@@ -13,7 +13,7 @@
   background-size: 70%;
   background-position: center; */
 }
-/* 
+
 #contact:after {
   content: "";
   display: block;
@@ -26,13 +26,10 @@
   opacity: 100;
 
   animation: noise 6s steps(10) infinite;
-
   background: url(../../assets/img/noise/noise01.svg);
-
   background-repeat: repeat;
-  background-size: 10%;
-
-} */
+  background-size: 40%;
+}
 
 /* background-color: rgba(0, 0, 0, 0.562); */
 
@@ -85,7 +82,7 @@ footer {
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
 }
 
@@ -98,11 +95,7 @@ footer {
   margin-left: 10px;
 }
 
-.touch {
-  /* color: greenyellow; */
-}
-
-/* @keyframes noise {
+@keyframes noise {
   0%,
   100% {
     background-position: 0 0;
@@ -143,4 +136,4 @@ footer {
   90% {
     background-position: -10% 10%;
   }
-} */
+}

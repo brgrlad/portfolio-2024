@@ -3,9 +3,9 @@ import "./contact.css";
 export default function Contact1() {
   return (
     <section id="contact">
-      <p className="marquee">
+      {/* <p className="marquee">
         WANNA SAY HELLO? WORK TOGETHER? GIVE FEEDBACK? WORDS OF ENCOURAGEMENT?
-      </p>
+      </p> */}
 
       <div className="contactContent">
         {/* <h2>

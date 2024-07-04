@@ -1,5 +1,7 @@
 .works {
   width: 100vw;
+  min-height: 100vh;
+
   padding: 20px 40px;
   color: var(--faded-black);
   background-color: var(--light-gray);
@@ -15,6 +17,7 @@
 
 .works h2 {
   z-index: 3;
+
   border: 2px solid var(--accent-green);
   width: fit-content;
   padding: 10px;
@@ -22,8 +25,47 @@
   max-height: 6rem;
 }
 
+.works h4 {
+  font-size: 25px;
+
+  /* margin-bottom: 20px; */
+}
+
+.projectText {
+  font-size: 20px;
+  align-items: start;
+}
+
+.projectStack {
+  display: flex;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.projectStack li {
+  margin-right: 5px;
+  background-color: var(--faded-black);
+  color: var(--light-gray);
+  border-radius: 20px;
+  height: fit-content;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.projectText p {
+  padding-bottom: 10px;
+
+  font-weight: 400;
+}
+
+.worksIntro {
+  padding-right: 20px;
+}
+
 .gearIconWrapper {
   text-align: left;
+  margin: 40px 0;
 }
 .gearIcon {
   width: 8%;
@@ -41,16 +83,16 @@
 }
 
 .works ul {
-  margin: 20px auto;
+  /* margin: 20px auto; */
   width: 100%;
   padding: 0;
 }
 
 .works li {
-  min-height: 70px;
+  /* min-height: 70px; */
   display: flex;
   flex-direction: column;
-  border-bottom: 1x solid var(--faded-black);
+  /* border-bottom: 1x solid var(--faded-black); */
   font-weight: 100;
   align-items: center;
   justify-content: center;
@@ -78,10 +120,6 @@
   filter: invert(100%);
   display: inline;
   float: right;
-}
-
-.works h3 {
-  font-size: 2rem;
 }
 
 .project {

@@ -18,12 +18,13 @@ h1 {
   font-size: 20px;
   font-style: italic;
   color: var(--text-white);
+  background-color: inherit;
   mix-blend-mode: difference;
+  z-index: 100;
 }
 nav {
-  height: 30px;
-
-  display: flex;
+  height: 50px;
+  /* display: flex; */
 }
 
 a {
