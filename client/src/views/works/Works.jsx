@@ -4,7 +4,7 @@ import projectMockup from "../../assets/img/projects-mockups/1.jpg";
 import arrowSide from "../../assets/img/icons/next.png";
 import gearIcon from "../../assets/img/icons/engine.png";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 let initialState = {
   drumMachine: false,
@@ -78,66 +78,6 @@ export default function Works() {
       <ul className="worksUL">
         <motion.li
           {...fadeInAnimation}
-          transition={{ ...fadeInAnimation.transition, delay: 0.5 }}
-        >
-          <div className="projectTitle">
-            <p> DRUM MACHINE</p>
-            <img
-              src={ArrowUpSolid}
-              className="arrowUp"
-              style={{
-                transform: isClicked.drumMachine
-                  ? "rotate(180deg)"
-                  : "rotate(0deg)",
-                transition: "transform .5",
-              }}
-              alt="Arrow Up"
-              onClick={() => handleClick("drumMachine")}
-            />
-          </div>
-
-          {isClicked.drumMachine && (
-            <motion.div className="project" {...fadeInAnimation}>
-              <div className="projectDescription">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
-                  nulla perferendis eligendi. Lorem ipsum dolor, sit amet
-                  consectetur
-                  <span className="newLine">
-                    adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit. Unde, minus. quod saepe quam
-                    consequuntur vero aut! Fuga adipisci nulla perferendis
-                    eligendi.
-                  </span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Unde, minu quod saepe quam consequuntur vero aut! Fuga
-                  adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Unde, minu quod saepe quam
-                  consequuntur vero aut! Fuga adipisci nulla perferendis
-                  eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Unde, minu
-                </p>
-
-                <div className="buttons">
-                  <button>
-                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
-                  </button>
-                  <button>
-                    VIEW LIVE
-                    <img src={arrowSide} className="openArrow" alt="" />
-                  </button>
-                </div>
-              </div>
-
-              {/*add project img here  */}
-              <img src={projectMockup} className="projectImage"></img>
-            </motion.div>
-          )}
-        </motion.li>
-
-        <motion.li
-          {...fadeInAnimation}
           transition={{ ...fadeInAnimation.transition, delay: 1 }}
         >
           <div className="projectTitle">
@@ -205,68 +145,6 @@ export default function Works() {
               <img src={projectMockup} className="projectImage"></img>
             </motion.div>
           )}
-        </motion.li>
-
-        <motion.li
-          {...fadeInAnimation}
-          transition={{ ...fadeInAnimation.transition, delay: 1.5 }}
-        >
-          <div className="projectTitle">
-            <p> TARA SHIPPING </p>
-            <img
-              src={ArrowUpSolid}
-              className="arrowUp"
-              style={{
-                transform: isClicked.taraShipping
-                  ? "rotate(180deg)"
-                  : "rotate(0deg)",
-                transition: "transform .5",
-              }}
-              alt="Arrow Up"
-              onClick={() => handleClick("taraShipping")}
-            />
-          </div>
-          <AnimatePresence>
-            {isClicked.taraShipping && (
-              <motion.div className="project" {...fadeInAnimation}>
-                <div className="projectDescription">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Vitae quod saepe quam consequuntur vero aut! Fuga adipisci
-                    nulla perferendis eligendi. Lorem ipsum dolor, sit amet
-                    consectetur
-                    <span className="newLine">
-                      adipisicing elit. Unde, minus. Lorem ipsum dolor, sit amet
-                      consectetur adipisicing elit. Unde, minus. quod saepe quam
-                      consequuntur vero aut! Fuga adipisci nulla perferendis
-                      eligendi.
-                    </span>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Unde, minu quod saepe quam consequuntur vero aut! Fuga
-                    adipisci nulla perferendis eligendi. Lorem ipsum dolor, sit
-                    amet consectetur adipisicing elit. Unde, minu quod saepe
-                    quam consequuntur vero aut! Fuga adipisci nulla perferendis
-                    eligendi. Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Unde, minu
-                  </p>
-
-                  <div className="buttons">
-                    <button>
-                      SOURCE CODE{" "}
-                      <img src="../../../public/logos/11github.svg" />
-                    </button>
-                    <button>
-                      VIEW LIVE
-                      <img src={arrowSide} className="openArrow" alt="" />
-                    </button>
-                  </div>
-                </div>
-
-                {/*add project img here  */}
-                <img src={projectMockup} className="projectImage"></img>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </motion.li>
 
         {/*------------- * project -------------- */}
