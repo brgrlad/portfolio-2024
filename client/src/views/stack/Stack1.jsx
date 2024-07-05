@@ -2,6 +2,7 @@ import "./stack1.css";
 import Marquee1 from "../../components/marquee/Marquee";
 import { motion } from "framer-motion";
 
+//LOGO  NAMES TO FETCH AND RENDER IMAGES CONDITIONALLY
 const logos = [
   "01Javascript.svg",
   "02React.svg",
@@ -11,12 +12,10 @@ const logos = [
   "10SaSS.svg",
   "08Framer.svg",
   "09Bootstrap.svg",
-
   "15Tailwind.svg",
   "05Node.svg",
   "06Mongo.svg",
   "07Express.svg",
-
   "11GitHub.svg",
   "12Postman.svg",
 ];

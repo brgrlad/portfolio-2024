@@ -7,11 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: black;
-  background-image: url(../../assets/img/bgs/gggrain-2.svg);
-  background-image: url(../../assets/img/bgs/6575374.jpg);
-  background-size: 70%;
-  background-position: center; */
+
+  color: var(--faded-gray);
 }
 
 #contact:after {
@@ -25,10 +22,10 @@
   z-index: 2;
   opacity: 100;
 
-  animation: noise 6s steps(10) infinite;
+  animation: noise 0.4s steps(10) infinite;
   background: url(../../assets/img/noise/noise01.svg);
   background-repeat: repeat;
-  background-size: 40%;
+  background-size: 35%;
 }
 
 /* background-color: rgba(0, 0, 0, 0.562); */
@@ -67,12 +64,46 @@
 
 .email {
   font-size: 4rem;
-  font-weight: 100;
 
-  /* text-decoration: underline; */
+  width: fit-content;
+  margin-left: auto;
+
+  border: 0.5px solid white;
+
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 30px;
+  border-radius: 100px;
   font-style: italic;
+  text-align: right;
+  font-weight: 500;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: drop-shadow(5px 5px 0px #00ff2f);
 }
 
+.emailIcon {
+  width: 50px;
+  display: inline;
+  filter: invert();
+
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.lets-chat {
+  font-size: 80px;
+
+  border-radius: 50%;
+  width: fit-content;
+  font-weight: 100;
+
+  background-size: cover;
+  background-blend-mode: difference;
+}
 footer {
   position: absolute;
   /* height: 200px; */

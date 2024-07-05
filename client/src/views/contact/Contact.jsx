@@ -1,19 +1,16 @@
 import "./contact.css";
+import arrow from "../../assets/img/icons/arrow-rotating.png";
 
 export default function Contact1() {
   return (
     <section id="contact">
-      {/* <p className="marquee">
-        WANNA SAY HELLO? WORK TOGETHER? GIVE FEEDBACK? WORDS OF ENCOURAGEMENT?
-      </p> */}
-
       <div className="contactContent">
-        {/* <h2>
-          STAY <span className="displayInline"> </span>IN TOUCH
-        </h2> */}
-        <h2 className="touch">STAY IN TOUCH!</h2>
-
-        <p className="email">hello@devbruno.eu</p>
+        <h3 className="lets-chat">...lets chat?</h3>
+        <h2 className="touch ">GET IN TOUCH!</h2>
+        <a href="mailto:hello@devbruno.eu" className="email">
+          hello@devbruno.eu
+          <img src={arrow} className="emailIcon" />
+        </a>
 
         <footer>
           <button className="socials"> GITHUB</button>

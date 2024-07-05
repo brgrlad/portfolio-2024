@@ -1,40 +1,40 @@
-import "./stack.css";
-// import js from "../../../public/logos/01javascript.svg";
+// import "./stack.css";
+// // import js from "../../../public/logos/01javascript.svg";
 
-import Marquee from "../../components/marquee/Marquee";
+// import Marquee from "../../components/marquee/Marquee";
 
-const logos = [
-  "01Javascript.svg",
-  "02React.svg",
-  "03HTML.svg",
-  "04CSS.svg",
-  "05Node.svg",
-  "06Mongo.svg",
-  "07Express.svg",
-  "08Framer.svg",
-  "09Bootstrap.svg",
-  "10SaSS.svg",
-  "11GitHub.svg",
-];
+// const logos = [
+//   "01Javascript.svg",
+//   "02React.svg",
+//   "03HTML.svg",
+//   "04CSS.svg",
+//   "05Node.svg",
+//   "06Mongo.svg",
+//   "07Express.svg",
+//   "08Framer.svg",
+//   "09Bootstrap.svg",
+//   "10SaSS.svg",
+//   "11GitHub.svg",
+// ];
 
-export default function Stack() {
-  return (
-    <section className="tech-stack">
-      <Marquee />
+// export default function Stack() {
+//   return (
+//     <section className="tech-stack">
+//       <Marquee />
 
-      <div className="logos">
-        {logos.map((fileName, index) => (
-          <div className="logoCard" key={index}>
-            <img
-              key={index}
-              src={"../../../public/logos/" + fileName}
-              alt={`Image ${index}`}
-              className="gallery-image"
-            />
-            <p>{fileName.substring(2, fileName.length - 4)}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
+//       <div className="logos">
+//         {logos.map((fileName, index) => (
+//           <div className="logoCard" key={index}>
+//             <img
+//               key={index}
+//               src={"../../../public/logos/" + fileName}
+//               alt={`Image ${index}`}
+//               className="gallery-image"
+//             />
+//             <p>{fileName.substring(2, fileName.length - 4)}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// }

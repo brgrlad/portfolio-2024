@@ -178,10 +178,6 @@ button > img {
     font-size: 0.8rem;
   }
 
-  .project .projectImage {
-    margin-bottom: 20px;
-  }
-
   .project {
     flex-wrap: wrap-reverse;
   }
