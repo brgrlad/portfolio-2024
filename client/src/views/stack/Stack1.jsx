@@ -33,7 +33,7 @@ export default function Stack1() {
 
       <div className="logosWrapper">
         <div className="h3Wrapper">
-          <h3>STUFF I WORK WITH</h3>
+          <h3>STUFF I WORK WITH !!!</h3>
           <p>FRONT TO BACK-END, AND ANYTHING IN BETWEEN !</p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Stack1() {
           >
             <img
               key={index}
-              src={"public/logos/" + fileName}
+              src={"/logos/" + fileName}
               alt={`Image ${index}`}
               className="gallery-image1"
             />
