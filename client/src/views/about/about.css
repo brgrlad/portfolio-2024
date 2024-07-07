@@ -73,10 +73,10 @@
 .profilePic2 {
   width: 30vw;
   height: 30vw;
-  z-index: 1;
+
   border-radius: 5px;
 
-  background-image: url(../../../public/screen-shots/001.jpg);
+  background-image: url(/src/assets/img/photos/selfie03.jpg);
 
   background-position: right;
 

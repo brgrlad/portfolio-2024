@@ -20,20 +20,21 @@ const logos = [
   "12Postman.svg",
 ];
 
-export default function Stack1() {
-  const fromTheTop = {
-    initial: { opacity: 0, scale: 0.9 },
-    whileInView: { opacity: 1, scale: 1 },
-    viewport: { once: true },
-  };
+// ANIMATION SETTINGS
+const fromTheTop = {
+  initial: { opacity: 0, scale: 0.9 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+};
 
+export default function Stack1() {
   return (
     <section className="tech-stack" id="tech-stack">
       <Marquee1 />
 
       <div className="logosWrapper">
         <div className="h3Wrapper">
-          <h3>STUFF I WORK WITH !!!</h3>
+          <h3>STUFF I WORK WITH</h3>
           <p>FRONT TO BACK-END, AND ANYTHING IN BETWEEN !</p>
         </div>
 

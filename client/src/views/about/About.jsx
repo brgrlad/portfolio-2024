@@ -1,8 +1,5 @@
 import "./about.css";
 
-// import profilePic from "../../assets/img/portrait.webp";
-// import profilePic from "../../assets/img/portrait1.jpeg";
-
 import starIcon from "../../assets/img/icons/star.svg";
 
 import { motion } from "framer-motion";
@@ -39,7 +36,7 @@ export default function About() {
           <motion.p {...enterAnimation}>
             I`M A WEB DEVELOPER BASED IN IRELAND WITH A STRONG FOUNDATION IN
             <span className="emphasis"> JAVASCRIPT </span> AND EXPERTISE IN
-            <span className="emphasis"> REACT </span> AND{" "}
+            <span className="emphasis"> REACT </span> AND
             <span className="emphasis">NEXT.JS </span>.
           </motion.p>
         </div>
@@ -50,14 +47,6 @@ export default function About() {
             I LOVE BUILDING APPLICATIONS THAT NOT ONLY LOOK COOL BUT ALSO FOLLOW
             THE BEST PRACTICES IN SEO AND RESPONSIVE DESIGN.
           </motion.p>
-
-          {/* <motion.p {...enterAnimation}>
-            NINE YEARS OF PREVIOUS EXPERIENCE IN{" "}
-            <span className="emphasis"> DIGITAL MARKETING </span> ALSO GIVE ME A
-            PRACTICAL PERSPECTIVE ON THE ONLINE LANDSCAPE, WHERE I UTILISE MY
-            KNOW-HOW TO ENHANCE BRAND ENGAGEMENT AND DRIVE REVENUE TO MY
-            CLIENTS.
-          </motion.p> */}
         </div>
 
         <motion.img
