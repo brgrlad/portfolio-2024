@@ -28,17 +28,6 @@
   background-size: 35%;
 }
 
-/* background-color: rgba(0, 0, 0, 0.562); */
-
-.marquee {
-  font-weight: 500;
-  color: var(--faded-black);
-  background-color: rgb(146, 219, 37);
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 .contactContent {
   text-align: center;
   line-height: 6rem;
@@ -46,9 +35,9 @@
   z-index: 99;
 }
 
-.displayInline {
+/* .displayInline {
   display: block;
-}
+} */
 .contactIMG {
   position: absolute;
   top: 18%;
@@ -89,18 +78,15 @@
   width: 50px;
   display: inline;
   filter: invert();
-
   margin-top: 5px;
   margin-left: 10px;
 }
 
 .lets-chat {
   font-size: 80px;
-
   border-radius: 50%;
   width: fit-content;
   font-weight: 100;
-
   background-size: cover;
   background-blend-mode: difference;
 }
@@ -126,6 +112,7 @@ footer {
   margin-left: 10px;
 }
 
+/* BACKGROUND NOISE ANIMATION */
 @keyframes noise {
   0%,
   100% {
@@ -166,5 +153,29 @@ footer {
 
   90% {
     background-position: -10% 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lets-chat {
+    font-size: 30px;
+
+    margin: 0 auto;
+  }
+
+  .touch {
+    font-size: 45px;
+    margin: -10px 0;
+  }
+
+  .email {
+    font-size: 30px;
+    padding: 0 30px;
+    height: 40px;
+    margin-top: 0;
+  }
+
+  .emailIcon {
+    width: 20px;
   }
 }

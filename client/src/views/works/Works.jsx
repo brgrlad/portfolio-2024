@@ -1,10 +1,11 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
 import "./works.css";
 import ArrowUpSolid from "../../assets/img/icons/arrow-up-solid.svg";
 import projectMockup from "../../assets/img/projects-mockups/1.jpg";
+import gitHubIcon from "../../../public/logos/11github.svg";
 import arrowSide from "../../assets/img/icons/next.png";
 import gearIcon from "../../assets/img/icons/engine.png";
-import { useState } from "react";
-import { motion } from "framer-motion";
 
 // GEAR ICON ANIMATION
 const gearIconAnimation = {
@@ -136,7 +137,7 @@ export default function Works() {
 
                 <div className="buttons">
                   <button>
-                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                    SOURCE CODE <img src={gitHubIcon} />
                   </button>
                   <button>
                     VIEW LIVE

@@ -8,7 +8,7 @@ export default function Contact1() {
         <h3 className="lets-chat">...lets chat?</h3>
         <h2 className="touch ">GET IN TOUCH!</h2>
         <a href="mailto:hello@devbruno.eu" className="email">
-          hello@devbruno.eu
+          bruno@devbruno.eu
           <img src={arrow} className="emailIcon" />
         </a>
 
