@@ -49,7 +49,7 @@ export default function Stack1() {
           >
             <img
               key={index}
-              src={"../../../public/logos/" + fileName}
+              src={"/logos/" + fileName}
               alt={`Image ${index}`}
               className="gallery-image1"
             />
