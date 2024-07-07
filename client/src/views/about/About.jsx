@@ -32,12 +32,6 @@ export default function About() {
 
         <motion.div className="profilePic2" {...photoAnimation}></motion.div>
 
-        {/* <motion.img
-          {...photoAnimation}
-          src={profilePic}
-          className="profilePic"
-        /> */}
-
         <div className="aboutText1">
           <motion.p {...enterAnimation} className="heyHello">
             HEY, HELLO THERE !
