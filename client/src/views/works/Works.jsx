@@ -223,7 +223,7 @@ export default function Works() {
               </div>
 
               <img
-                src="/screen-shots/whats-new2.png"
+                src="/screen-shots/whats-new.png"
                 className="projectImage whats-new"
               ></img>
             </motion.div>

@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   color: var(--faded-gray);
 }
 
@@ -53,6 +52,7 @@
 
 .email {
   font-size: 4rem;
+  cursor: auto;
 
   width: fit-content;
   margin-left: auto;
@@ -91,25 +91,25 @@
   background-blend-mode: difference;
 }
 footer {
-  position: absolute;
-  /* height: 200px; */
-  padding: 30px;
-
-  width: 100%;
-  bottom: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.socials {
-  font-size: 0.8rem;
+a.socials {
+  font-size: 1.2rem;
   font-weight: 900;
-  height: 25px;
-  z-index: 100;
-  padding: 15px 20px;
-  margin-left: 10px;
+  margin-left: 20px;
+  display: flex;
+  color: rgb(187, 187, 187);
+  font-weight: 500;
+}
+
+a.socials img {
+  width: 10px;
+  margin-left: 5px;
+  rotate: 40deg;
+  filter: brightness(70%);
 }
 
 /* BACKGROUND NOISE ANIMATION */
