@@ -137,10 +137,24 @@ export default function Works() {
 
                 <div className="buttons">
                   <button>
-                    SOURCE CODE <img src={gitHubIcon} />
+                    <a
+                      href="https://github.com/brgrlad/pink-piranha-website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      SOURCE CODE
+                    </a>
+                    <img src={gitHubIcon} />
                   </button>
+
                   <button>
-                    VIEW LIVE
+                    <a
+                      href="https://pinkpiranha.netlify.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VIEW LIVE
+                    </a>
                     <img src={arrowSide} className="openArrow" alt="" />
                   </button>
                 </div>
@@ -213,12 +227,22 @@ export default function Works() {
 
                 <div className="buttons">
                   <button>
-                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      SOURCE CODE
+                    </a>
+                    <img src={gitHubIcon} />
                   </button>
-                  <button>
-                    VIEW LIVE
+
+                  {/* <button>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VIEW LIVE
+                    </a>
                     <img src={arrowSide} className="openArrow" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
 
@@ -286,12 +310,22 @@ export default function Works() {
 
                 <div className="buttons">
                   <button>
-                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                    <a
+                      href="https://github.com/brgrlad/drum-machine-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      SOURCE CODE
+                    </a>
+                    <img src={gitHubIcon} />
                   </button>
-                  <button>
-                    VIEW LIVE
+
+                  {/* <button>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      VIEW LIVE
+                    </a>
                     <img src={arrowSide} className="openArrow" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
 
@@ -358,11 +392,14 @@ export default function Works() {
 
                 <div className="buttons">
                   <button>
-                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
-                  </button>
-                  <button>
-                    VIEW LIVE
-                    <img src={arrowSide} className="openArrow" alt="" />
+                    <a
+                      href="https://github.com/brgrlad/portfolio-2024"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      SOURCE CODE
+                    </a>
+                    <img src={gitHubIcon} />
                   </button>
                 </div>
               </div>
@@ -429,10 +466,24 @@ export default function Works() {
 
                 <div className="buttons">
                   <button>
-                    SOURCE CODE <img src="../../../public/logos/11github.svg" />
+                    <a
+                      href="https://github.com/brgrlad/form-validation-challenge-fm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      SOURCE CODE
+                    </a>
+                    <img src={gitHubIcon} />
                   </button>
+
                   <button>
-                    VIEW LIVE
+                    <a
+                      href="https://brgrlad.github.io/form-validation-challenge-fm/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VIEW LIVE
+                    </a>
                     <img src={arrowSide} className="openArrow" alt="" />
                   </button>
                 </div>

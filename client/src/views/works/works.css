@@ -1,6 +1,6 @@
 .works {
   width: 100vw;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   padding: 20px 40px;
   color: var(--faded-black);
   background-color: var(--light-gray);
@@ -26,8 +26,6 @@
 
 .works h4 {
   font-size: 25px;
-
-  /* margin-bottom: 20px; */
 }
 
 .projectText {
@@ -46,7 +44,7 @@
   background-color: var(--faded-black);
   color: var(--light-gray);
   border-radius: 20px;
-  height: fit-content;
+
   padding: 0 15px;
   font-size: 15px;
   font-weight: 900;
@@ -87,7 +85,6 @@
 }
 
 .works li {
-  min-height: 50px;
   display: flex;
   flex-direction: column;
   font-weight: 100;
@@ -139,6 +136,10 @@
   background-color: var(--light-gray);
 }
 
+button a {
+  font-size: 20px;
+}
+
 .openArrow {
   rotate: 320deg;
 }
@@ -168,6 +169,9 @@ button > img {
 }
 
 @media screen and (max-width: 870px) {
+  .works {
+    min-height: fit-content;
+  }
   .worksHeader {
     padding: 20px 0;
   }
