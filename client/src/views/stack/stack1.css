@@ -59,6 +59,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .tech-stack {
+    background-size: 40%;
+  }
   .h3Wrapper {
     margin-top: 0;
     min-width: 100%;

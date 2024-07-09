@@ -5,19 +5,16 @@
   --accent-green: rgb(70, 181, 10);
   --text-white: rgb(229, 229, 229);
   --border-green: 1px solid var(--accent-green);
-
   width: 100vw;
   max-width: 100vw;
   overflow-x: hidden;
   margin: auto;
-  /* background-color: var(--primary-black); */
   background-color: #000000;
   font-family: "Red Hat Display", sans-serif;
 }
 
 body {
   width: 100%;
-  /* margin: auto; */
   max-width: 1600px;
   color: var(--text-white);
 }
@@ -31,7 +28,4 @@ img {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: var(--light-gray);
-
-  /* color: #000000; */
-  /* mix-blend-mode: difference; */
 }

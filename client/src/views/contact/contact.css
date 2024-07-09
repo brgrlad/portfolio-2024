@@ -153,12 +153,11 @@ a.socials img {
 @media screen and (max-width: 700px) {
   .lets-chat {
     font-size: 30px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   .touch {
     font-size: 45px;
-    /* margin: -10px 0; */
   }
 
   .email {

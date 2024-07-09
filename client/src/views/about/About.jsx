@@ -35,7 +35,7 @@ export default function About() {
           </motion.p>
           <motion.p {...enterAnimation}>
             I`M A WEB DEVELOPER BASED IN IRELAND WITH A STRONG FOUNDATION IN
-            <span className="emphasis"> JAVASCRIPT </span> AND EXPERTISE IN
+            <span className="emphasis">JAVASCRIPT </span> AND EXPERTISE IN
             <span className="emphasis"> REACT </span> AND
             <span className="emphasis">NEXT.JS </span>.
           </motion.p>
