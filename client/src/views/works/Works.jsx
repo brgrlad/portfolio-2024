@@ -49,9 +49,9 @@ export default function Works() {
       {/* --------- SECTION DESCRIPTION <p>-------- */}
       <motion.div className="worksHeader" id="works" {...fadeInAnimation}>
         <p className="worksIntro">
-          Selected works as of May 2024. A mix of front-end, full-stack and
-          mobile applications. All idealized and coded by me, with love, and
-          long hours of work!
+          <strong> Selected works as of June 2024 </strong>. A mix of front-end,
+          full-stack and mobile applications. All idealized and coded by me,
+          with love, and long hours of work!
         </p>
         <h2>WORKS</h2>
       </motion.div>
