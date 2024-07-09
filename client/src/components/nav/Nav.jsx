@@ -1,7 +1,6 @@
 import "./nav.css";
-import { motion, AnimatePresence } from "framer-motion";
-
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Nav() {
   const animationSettings = {
@@ -22,7 +21,9 @@ export default function Nav() {
       <h1 className="h1Header">BRUNO GRECCHI</h1>
 
       <nav>
-        <button onClick={handleClick}> MENU </button>
+        <button className="menuButton" onClick={handleClick}>
+          MENU
+        </button>
 
         <AnimatePresence>
           {toggleMenu && (
