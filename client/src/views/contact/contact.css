@@ -34,9 +34,6 @@
   z-index: 99;
 }
 
-/* .displayInline {
-  display: block;
-} */
 .contactIMG {
   position: absolute;
   top: 18%;
@@ -53,12 +50,9 @@
 .email {
   font-size: 4rem;
   cursor: auto;
-
   width: fit-content;
   margin-left: auto;
-
   border: 0.5px solid white;
-
   background-color: black;
   border-radius: 10px;
   padding: 0 30px;
@@ -156,23 +150,21 @@ a.socials img {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .lets-chat {
     font-size: 30px;
-
     margin: 0 auto;
   }
 
   .touch {
     font-size: 45px;
-    margin: -10px 0;
+    /* margin: -10px 0; */
   }
 
   .email {
     font-size: 30px;
     padding: 0 30px;
     height: 40px;
-    margin-top: 0;
   }
 
   .emailIcon {
