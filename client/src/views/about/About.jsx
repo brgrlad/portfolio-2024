@@ -34,7 +34,8 @@ export default function About() {
             HEY, HELLO THERE !
           </motion.p>
           <motion.p {...enterAnimation}>
-            I`M A WEB DEVELOPER BASED IN IRELAND WITH A STRONG FOUNDATION IN
+            I`M A WEB DEVELOPER BASED IN BARCELONA, CATALUNYA, WITH A STRONG
+            FOUNDATION IN
             <span className="emphasis">JAVASCRIPT </span> AND EXPERTISE IN
             <span className="emphasis"> REACT </span> AND
             <span className="emphasis">NEXT.JS </span>.

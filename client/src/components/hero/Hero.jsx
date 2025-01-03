@@ -52,7 +52,7 @@ export default function Hero() {
         transition={{ ...fromTheTop.transition, delay: 0.6 }}
         {...disappear}
       >
-        <h3 className="stroke marginLeft">BASED IN DUBLIN</h3>
+        <h3 className="stroke marginLeft">BASED IN BARNA</h3>
         <motion.img
           {...attention}
           src={arrowDown}

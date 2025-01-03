@@ -114,24 +114,17 @@ export default function Works() {
                   </ul>
 
                   <p>
-                    For this project I led the front-end development,
-                    translating a designer`s layout into a fully functional
-                    website.
+                    I led the front-end development for this project,
+                    translating a designer`s layout into a functional website
+                    using Next.js for server-side rendering and SEO
+                    optimization.
                   </p>
+
                   <p>
-                    I opted to use Next.js due to its server-side rendering
-                    capabilities to boost SEO. For the UI components, I chose
-                    Tailwind CSS for efficient and scalable styling.
-                  </p>
-                  <p>
-                    One of the main challenges was adapting the design, which
-                    was provided only in a desktop format. To address this, I
-                    created responsive versions to ensure a seamless experience
-                    across all devices.
-                  </p>
-                  <p>
-                    Finally, I used Framer Motion for a bit of animation and
-                    movement to enhance the user experience.
+                    Tailwind CSS was chosen for efficient styling, and I adapted
+                    the desktop-only design into responsive versions for all
+                    devices. Additionally, I incorporated Framer Motion for
+                    animations to enhance the user experience.
                   </p>
                 </div>
 
@@ -202,26 +195,17 @@ export default function Works() {
                   </ul>
 
                   <p>
-                    This is a full-stack, personal project of mine consisting of
-                    an experimental news feed.
+                    This is a full-stack project featuring an experimental news
+                    feed with a filter for political bias: liberal, moderate, or
+                    conservative. The app sources content from the News.org API.
                   </p>
+
                   <p>
-                    Its main feature is a filter that allows users to choose
-                    their news feed based on political bias: liberal, moderate,
-                    or conservative. The app sources content from the News.org
-                    API.
-                  </p>
-                  <p>
-                    For this project, I used the MERN stack: MongoDB,
-                    Express.js, React, and Node.js. I chose not to include
-                    additional libraries as I wanted to dive deeper into more
-                    advanced React concepts, such as useContext and useReducer,
-                    as well as practice CSS styling.
-                  </p>
-                  <p>
-                    On the back end, I implemented routes and user
-                    authentication with Node.js and Express.js. MongoDB serves
-                    as the database, storing user login details and bookmarks.
+                    Here, I focused on advanced React concepts like useContext
+                    and useReducer, and practiced CSS styling. The back end
+                    includes routes and user authentication with Node.js and
+                    Express.js, while MongoDB stores user login details and
+                    bookmarks.
                   </p>
                 </div>
 
@@ -287,24 +271,18 @@ export default function Works() {
                   </ul>
 
                   <p>
-                    Pet project of mine. A simple, yet fun drum-machine for
-                    mobile devices. The app was developed using React Native and
-                    the sound API.
+                    This is a pet project of mine: a simple, fun drum machine
+                    for mobile devices developed with React Native and the sound
+                    API. Users can trigger drum sounds by hitting on-screen
+                    pads, with the soundbank pre-loaded in the client to reduce
+                    latency.
                   </p>
+
                   <p>
-                    The user can trigger individual drum sounds by hitting the
-                    pads on the screen. The soundbank is stored and pre-loaded
-                    in the client, as to reduce latency.
-                  </p>
-                  <p>
-                    It`s a fun, little toy that I enjoyed creating! Besides, it
-                    gave a valuable insight into mobile development and React
-                    Native.
-                  </p>
-                  <p>
-                    For the future I plan on adding a recording function, so
-                    users can record and playback their beats. I also would like
-                    to implement a step-sequencer to spice things up a bit!
+                    This project provided valuable insights into mobile
+                    development and React Native. Future plans include adding a
+                    recording function and implementing a step-sequencer to
+                    enhance functionality.
                   </p>
                 </div>
 
@@ -367,26 +345,18 @@ export default function Works() {
                   </ul>
 
                   <p>
-                    This portfolio itself a showcase of my skills. I
-                    conceptualised, designed and code the whole website from the
-                    ground up.
+                    This portfolio showcases my skills. I conceptualized,
+                    designed, and coded the entire website from the ground up
+                    using React. It`s a single-page front-end application, and
+                    due to the customizable layout, I opted for CSS over UI
+                    libraries to achieve a clean, responsive look.
                   </p>
+
                   <p>
-                    Built with React, it`s a single-page front-end application.
-                    Because of the highly customizable nature of the layout, I
-                    opted not to use any UI libraries. Instead, I relied on CSS
-                    and my own design skills to achieve a clean, responsive
-                    look.
-                  </p>
-                  <p>
-                    For animations, I integrated Framer Motion to add subtle
-                    interactions, enhancing the overall user experience.
-                  </p>
-                  <p>
-                    This is a everchanging page, so I`m constantly tweaking and
-                    improving things. Next, I want split the code into even
-                    smaller chunks in order to create a better separation of
-                    concerns.
+                    I integrated Framer Motion for subtle animations to enhance
+                    the user experience. This is an ever-evolving page, and I
+                    plan to further split the code into smaller chunks to
+                    improve separation of concerns.
                   </p>
                 </div>
 
@@ -404,10 +374,7 @@ export default function Works() {
                 </div>
               </div>
 
-              <img
-                src="/screen-shots/portfolio.png"
-                className="projectImage"
-              ></img>
+              <img src="/screen-shots/portfolio.png" className="projectImage" />
             </motion.div>
           )}
         </motion.li>

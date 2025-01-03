@@ -9,7 +9,7 @@ export default function Contact1() {
         <h3 className="lets-chat">...lets chat?</h3>
         <h2 className="touch ">GET IN TOUCH!</h2>
         <p className="email">
-          bruno@devbruno.eu
+          bgrecchi@gmail.com
           <img src={arrowRotating} className="emailIcon" />
         </p>
 
