@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import "./works.css";
 import ArrowUpSolid from "../../assets/img/icons/arrow-up-solid.svg";
-import projectMockup from "../../assets/img/projects-mockups/1.jpg";
+// import projectMockup from "../../assets/img/projects-mockups/1.jpg";
 import gitHubIcon from "../../../public/logos/11github.svg";
 import arrowSide from "../../assets/img/icons/next.png";
 import gearIcon from "../../assets/img/icons/engine.png";
@@ -27,7 +27,7 @@ const fadeInAnimation = {
 let initialState = {
   pinkPiranha: false,
   whatsNew: false,
-  drumMachine: false,
+  laCozinha: false,
   portfolio: false,
   fromValidation: false,
 };
@@ -49,9 +49,9 @@ export default function Works() {
       {/* --------- SECTION DESCRIPTION <p>-------- */}
       <motion.div className="worksHeader" id="works" {...fadeInAnimation}>
         <p className="worksIntro">
-          <strong> Selected works as of June 2024 </strong>. A mix of front-end,
-          full-stack and mobile applications. All idealized and coded by me,
-          with love, and long hours of work!
+          <strong> Selected works as of January 2025 </strong>. A mix of
+          front-end, full-stack and mobile applications. All idealized and coded
+          by me, with love, and long hours of work!
         </p>
         <h2>WORKS</h2>
       </motion.div>
@@ -152,11 +152,12 @@ export default function Works() {
                   </button>
                 </div>
               </div>
-
-              <img
-                src="/screen-shots/pink-piranha.png"
-                className="projectImage"
-              ></img>
+              <div className="imageWrapper">
+                <img
+                  src="/screen-shots/pink-piranha.png"
+                  className="projectImage"
+                ></img>
+              </div>
             </motion.div>
           )}
         </motion.li>
@@ -229,86 +230,83 @@ export default function Works() {
                   </button> */}
                 </div>
               </div>
-
-              <img
-                src="/screen-shots/whats-new.png"
-                className="projectImage whats-new"
-              ></img>
+              <div className="imageWrapper">
+                <img
+                  src="/screen-shots/news-1.png"
+                  className="projectImage whats-new"
+                ></img>
+              </div>
             </motion.div>
           )}
         </motion.li>
 
-        {/* --------- DRUM MACHINE------------- */}
+        {/* --------- LA COZINHA------------- */}
         <motion.li
           {...fadeInAnimation}
           transition={{ ...fadeInAnimation.transition, delay: 1 }}
         >
           <div className="projectTitle">
-            <p> DRUM MACHINE</p>
+            <p> LA COZINHA </p>
             <img
               src={ArrowUpSolid}
               className="arrowUp"
               style={{
-                transform: isClicked.drumMachine
+                transform: isClicked.laCozinha
                   ? "rotate(180deg)"
                   : "rotate(0deg)",
                 transition: "transform .3s",
               }}
               alt="Arrow Up"
-              onClick={() => handleClick("drumMachine")}
+              onClick={() => handleClick("laCozinha")}
             />
           </div>
 
-          {isClicked.drumMachine && (
+          {isClicked.laCozinha && (
             <motion.div className="project" {...fadeInAnimation}>
               <div className="projectDescription">
                 <div className="projectText">
                   <h4>PROJECT HIGHLIGHTS</h4>
 
                   <ul className="projectStack">
-                    <li> REACT NATIVE</li>
-                    <li> SOUND API </li>
+                    <li> HTML </li>
+                    <li> CSS</li>
+                    <li> JAVASCRIPT</li>
                   </ul>
 
                   <p>
-                    This is a pet project of mine: a simple, fun drum machine
-                    for mobile devices developed with React Native and the sound
-                    API. Users can trigger drum sounds by hitting on-screen
-                    pads, with the soundbank pre-loaded in the client to reduce
-                    latency.
+                    During my time at Amenitiz Barcelona, I led both the design
+                    and front-end development of this project. Through close
+                    collaboration and multiple client meetings, I successfully
+                    translated my client`s abstract ideas into a tangible,
+                    business-focused website.
                   </p>
 
                   <p>
-                    This project provided valuable insights into mobile
-                    development and React Native. Future plans include adding a
-                    recording function and implementing a step-sequencer to
-                    enhance functionality.
+                    Working with HTML, CSS, and JavaScript, I built upon one of
+                    Amenitiz existing templates to accelerate development while
+                    ensuring a custom feel.
                   </p>
                 </div>
 
                 <div className="buttons">
                   <button>
                     <a
-                      href="https://github.com/brgrlad/drum-machine-app"
+                      href="https://www.lacozinha.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      SOURCE CODE
+                      VIEW LIVE
                     </a>
                     <img src={gitHubIcon} />
                   </button>
-
-                  {/* <button>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      VIEW LIVE
-                    </a>
-                    <img src={arrowSide} className="openArrow" alt="" />
-                  </button> */}
                 </div>
               </div>
-
-              {/*add project img here  */}
-              <img src={projectMockup} className="projectImage"></img>
+              <div className="imageWrapper">
+                <img
+                  src="/screen-shots/la-cozinha2.png"
+                  className="projectImage whats-new"
+                ></img>
+              </div>
             </motion.div>
           )}
         </motion.li>
@@ -373,8 +371,12 @@ export default function Works() {
                   </button>
                 </div>
               </div>
-
-              <img src="/screen-shots/portfolio.png" className="projectImage" />
+              <div className="imageWrapper">
+                <img
+                  src="/screen-shots/portfolio.png"
+                  className="projectImage"
+                />
+              </div>
             </motion.div>
           )}
         </motion.li>
@@ -455,11 +457,12 @@ export default function Works() {
                   </button>
                 </div>
               </div>
-
-              <img
-                src="/screen-shots/form-validation.png"
-                className="projectImage"
-              ></img>
+              <div className="imageWrapper">
+                <img
+                  src="/screen-shots/form-validation.png"
+                  className="projectImage"
+                ></img>
+              </div>
             </motion.div>
           )}
         </motion.li>

@@ -59,6 +59,7 @@
   top: 20%;
   border-radius: 50%;
   z-index: 0;
+  border: 2px solid red;
 }
 
 .profilePic2 {
@@ -68,6 +69,7 @@
   background-image: url(/src/assets/img/photos/selfie03.jpg);
   background-position: right;
   background-size: cover;
+  opacity: 80%;
 }
 
 .aboutText1 {
@@ -79,8 +81,8 @@
   position: absolute;
   word-wrap: normal;
 
-  left: 35%;
-  left: 270px;
+  /* left: 35%; */
+  left: 250px;
   top: 40%;
   padding: 20px;
   border-radius: 10px;

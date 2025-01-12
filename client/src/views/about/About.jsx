@@ -24,7 +24,7 @@ export default function About() {
         <h2>ABOUT ME</h2>
 
         <motion.h3 {...enterAnimation} className="stroke">
-          BRUNO GRECCHI
+          BRUNO GRECHI
         </motion.h3>
 
         <motion.div className="profilePic2" {...photoAnimation}></motion.div>

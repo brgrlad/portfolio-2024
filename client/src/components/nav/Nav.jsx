@@ -18,7 +18,7 @@ export default function Nav() {
 
   return (
     <motion.header {...animationSettings}>
-      <h1 className="h1Header">BRUNO GRECCHI</h1>
+      <h1 className="h1Header">BRUNO GRECHI</h1>
 
       <nav>
         <button className="menuButton" onClick={handleClick}>

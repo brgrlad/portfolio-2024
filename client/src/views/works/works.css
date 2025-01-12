@@ -36,7 +36,6 @@
 .projectStack {
   display: flex;
   height: fit-content;
-  /* margin-bottom: 20px; */
 }
 
 .projectStack li {
@@ -44,7 +43,6 @@
   background-color: var(--faded-black);
   color: var(--light-gray);
   border-radius: 20px;
-
   padding: 0 15px;
   font-size: 15px;
   font-weight: 900;
@@ -52,8 +50,8 @@
 
 .projectText p {
   padding-bottom: 10px;
-
   font-weight: 400;
+  font-size: 16px;
 }
 
 .worksIntro {
@@ -119,15 +117,34 @@
 .project {
   margin: 10px 0;
   display: flex;
-  /* justify-content: space-evenly; */
   padding: 20px 20px;
   background-color: rgb(158, 158, 158);
   border-radius: 10px;
+
+  border: 2px solid red;
+
+  /* bellow new ads */
+}
+
+.imageWrapper {
+  border: 2px solid red;
+  flex: 1;
+  /* min-height: 100%; */
+
+  background-color: rgb(38, 186, 87);
+}
+
+.imageWrapper img {
+  min-height: 100%;
+  min-width: 90%;
+  object-fit: cover;
+  margin: auto;
 }
 
 .project button {
+  scale: 0.7;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border-radius: 50px;
   border: none;
   float: right;
@@ -146,10 +163,16 @@ button a {
 
 .projectDescription {
   width: 50%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 20px;
+  /* height: fit-content; */
+
+  border: 2px solid green;
+
+  flex: 1;
   height: fit-content;
 }
 
@@ -186,6 +209,7 @@ button > img {
 
   .buttons {
     display: flex;
+
     justify-content: right;
   }
 
