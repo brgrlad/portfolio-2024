@@ -117,6 +117,7 @@
 .project {
   margin: 10px 0;
   display: flex;
+
   padding: 20px 20px;
   background-color: rgb(158, 158, 158);
   border-radius: 10px;
@@ -205,13 +206,16 @@ button > img {
     font-size: 1rem;
   }
 
+  .projectDescription {
+    min-width: 100%;
+  }
+
   .project {
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse !important;
   }
 
   .buttons {
     display: flex;
-
     justify-content: right;
   }
 
