@@ -16,7 +16,6 @@
 
 .works h2 {
   z-index: 3;
-
   border: 2px solid var(--accent-green);
   width: fit-content;
   padding: 10px;
@@ -30,7 +29,6 @@
 
 .projectText {
   font-size: 20px;
-  align-items: start;
 }
 
 .projectStack {
@@ -158,34 +156,26 @@
 }
 
 .buttons {
-  border: 1px solid orange;
-  /* display: flex;
-  justify-content: right; */
-
   display: flex;
   justify-content: flex-end;
-  width: 100%; /* Make sure container takes full width */
+  width: 100%;
   gap: 10px;
 }
 
 .project button {
-  scale: 0.7;
   font-style: italic;
   font-size: 0.8rem;
   border-radius: 50px;
   border: none;
-  /* float: right; */
-  /* margin-left: 10px; */
   color: var(--faded-black);
   background-color: var(--light-gray);
-
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
 button a {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .openArrow {
@@ -206,10 +196,9 @@ button a {
 }
 
 button > img {
-  width: 20px;
+  width: 15px;
   display: inline;
   margin-left: 10px;
-
   padding: 0;
 }
 
