@@ -80,6 +80,78 @@ export default function Works() {
 
       {/* ------------- UL WRAPPER ------------- */}
       <ul className="worksUL">
+        {/* --------- LA COZINHA------------- */}
+        <motion.li
+          {...fadeInAnimation}
+          transition={{ ...fadeInAnimation.transition, delay: 1 }}
+        >
+          <div className="projectTitle">
+            <p> LA COZINHA </p>
+            <img
+              src={ArrowUpSolid}
+              className="arrowUp"
+              style={{
+                transform: isClicked.laCozinha
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)",
+                transition: "transform .3s",
+              }}
+              alt="Arrow Up"
+              onClick={() => handleClick("laCozinha")}
+            />
+          </div>
+
+          {isClicked.laCozinha && (
+            <motion.div className="project" {...fadeInAnimation}>
+              <div className="projectDescription">
+                <div className="projectText">
+                  <h4>PROJECT HIGHLIGHTS</h4>
+
+                  <ul className="projectStack">
+                    <li> HTML </li>
+                    <li> CSS</li>
+                    <li> JAVASCRIPT</li>
+                  </ul>
+
+                  <hr></hr>
+
+                  <p>
+                    During my time at Amenitiz Barcelona, I led both the design
+                    and front-end development of this project. Through close
+                    collaboration and multiple client meetings, I successfully
+                    translated my client`s abstract ideas into a tangible,
+                    business-focused website.
+                  </p>
+
+                  <p>
+                    Working with HTML, CSS, and JavaScript, I built upon one of
+                    Amenitiz existing templates to accelerate development while
+                    ensuring a custom feel.
+                  </p>
+                </div>
+
+                <div className="buttons">
+                  <button>
+                    <a
+                      href="https://www.lacozinha.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VIEW LIVE
+                    </a>
+                    <img src={gitHubIcon} />
+                  </button>
+                </div>
+              </div>
+              <div className="imageWrapper">
+                <img
+                  src="/screen-shots/la-cozinha2.png"
+                  className="projectImage whats-new"
+                ></img>
+              </div>
+            </motion.div>
+          )}
+        </motion.li>
         {/* --------- PINK PIRANHA -------------- */}
         <motion.li
           {...fadeInAnimation}
@@ -112,6 +184,8 @@ export default function Works() {
                     <li> NEXT JS</li>
                     <li> RESEND API</li>
                   </ul>
+
+                  <hr></hr>
 
                   <p>
                     I led the front-end development for this project,
@@ -195,6 +269,8 @@ export default function Works() {
                     <li> NODE JS</li>
                   </ul>
 
+                  <hr></hr>
+
                   <p>
                     This is a full-stack project featuring an experimental news
                     feed with a filter for political bias: liberal, moderate, or
@@ -233,76 +309,6 @@ export default function Works() {
           )}
         </motion.li>
 
-        {/* --------- LA COZINHA------------- */}
-        <motion.li
-          {...fadeInAnimation}
-          transition={{ ...fadeInAnimation.transition, delay: 1 }}
-        >
-          <div className="projectTitle">
-            <p> LA COZINHA </p>
-            <img
-              src={ArrowUpSolid}
-              className="arrowUp"
-              style={{
-                transform: isClicked.laCozinha
-                  ? "rotate(180deg)"
-                  : "rotate(0deg)",
-                transition: "transform .3s",
-              }}
-              alt="Arrow Up"
-              onClick={() => handleClick("laCozinha")}
-            />
-          </div>
-
-          {isClicked.laCozinha && (
-            <motion.div className="project" {...fadeInAnimation}>
-              <div className="projectDescription">
-                <div className="projectText">
-                  <h4>PROJECT HIGHLIGHTS</h4>
-
-                  <ul className="projectStack">
-                    <li> HTML </li>
-                    <li> CSS</li>
-                    <li> JAVASCRIPT</li>
-                  </ul>
-
-                  <p>
-                    During my time at Amenitiz Barcelona, I led both the design
-                    and front-end development of this project. Through close
-                    collaboration and multiple client meetings, I successfully
-                    translated my client`s abstract ideas into a tangible,
-                    business-focused website.
-                  </p>
-
-                  <p>
-                    Working with HTML, CSS, and JavaScript, I built upon one of
-                    Amenitiz existing templates to accelerate development while
-                    ensuring a custom feel.
-                  </p>
-                </div>
-
-                <div className="buttons">
-                  <button>
-                    <a
-                      href="https://www.lacozinha.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      VIEW LIVE
-                    </a>
-                    <img src={gitHubIcon} />
-                  </button>
-                </div>
-              </div>
-              <div className="imageWrapper">
-                <img
-                  src="/screen-shots/la-cozinha2.png"
-                  className="projectImage whats-new"
-                ></img>
-              </div>
-            </motion.div>
-          )}
-        </motion.li>
         {/* --------- MY PORTFOLIO------------- */}
         <motion.li
           {...fadeInAnimation}
@@ -334,6 +340,8 @@ export default function Works() {
                     <li> REACT </li>
                     <li> FRAMER MOTION</li>
                   </ul>
+
+                  <hr></hr>
 
                   <p>
                     This portfolio showcases my skills. I conceptualized,
@@ -406,6 +414,8 @@ export default function Works() {
                     <li> HTML </li>
                     <li> CSS</li>
                   </ul>
+
+                  <hr></hr>
 
                   <p>
                     A simple yet efficient form validation code that checks for

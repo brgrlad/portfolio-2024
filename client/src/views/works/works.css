@@ -28,7 +28,7 @@
 }
 
 .projectText {
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .projectStack {
@@ -41,8 +41,7 @@
   background-color: var(--faded-black);
   color: var(--light-gray);
   border-radius: 20px;
-  padding: 0 15px;
-  font-size: 15px;
+  padding: 0 12px;
   font-weight: 900;
 }
 
@@ -77,7 +76,7 @@
 
 .works ul {
   width: 100%;
-  padding: 0 0 40px 0;
+  padding: 0 0 20px 0;
 }
 
 .works li {
@@ -117,8 +116,6 @@
   padding: 20px 20px;
   background-color: rgb(158, 158, 158);
   border-radius: 10px;
-
-  /* bellow new ads */
 }
 
 .imageWrapper {
@@ -155,11 +152,19 @@
   margin: auto;
 }
 
+hr {
+  margin: 10px 0 30px 0;
+
+  border-bottom: 1px dotted rgb(97, 94, 94);
+}
+
 .buttons {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   gap: 10px;
+
+  margin-top: 20px;
 }
 
 .project button {
