@@ -154,7 +154,7 @@ export default function Works() {
               </div>
               <div className="imageWrapper">
                 <img
-                  src="/screen-shots/pink-piranha.png"
+                  src="/screen-shots/pinkpiranha.png"
                   className="projectImage"
                 ></img>
               </div>
@@ -212,22 +212,15 @@ export default function Works() {
 
                 <div className="buttons">
                   <button>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="https://github.com/brgrlad/whats-new-vite-final"
+                      rel="noopener noreferrer"
+                    >
                       SOURCE CODE
                     </a>
                     <img src={gitHubIcon} />
                   </button>
-
-                  {/* <button>
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      VIEW LIVE
-                    </a>
-                    <img src={arrowSide} className="openArrow" alt="" />
-                  </button> */}
                 </div>
               </div>
               <div className="imageWrapper">
