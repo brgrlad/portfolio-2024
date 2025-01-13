@@ -121,22 +121,24 @@
   background-color: rgb(158, 158, 158);
   border-radius: 10px;
 
-  border: 2px solid red;
+  border: 2px solid blue;
 
   /* bellow new ads */
 }
 
 .imageWrapper {
   border: 2px solid red;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   flex: 1;
-  /* min-height: 100%; */
-
   background-color: rgb(38, 186, 87);
 }
 
 .imageWrapper img {
-  min-height: 100%;
-  min-width: 90%;
+  max-height: 90%;
+
+  border: 2px solid orange;
   object-fit: cover;
   margin: auto;
 }
