@@ -122,24 +122,39 @@
   background-color: rgb(158, 158, 158);
   border-radius: 10px;
 
-  border: 2px solid blue;
-
   /* bellow new ads */
 }
 
 .imageWrapper {
-  border: 2px solid red;
+  border-radius: 5px;
   align-items: center;
   display: flex;
   justify-content: center;
   flex: 1;
-  background-color: rgb(38, 186, 87);
+
+  --_mesh-gradient-blur: 0px;
+  --_mesh-gradient-blend-mode: normal;
+
+  background: radial-gradient(at 1% 20%, #fcfcfc 0px, transparent 50%),
+    radial-gradient(at 72% 5%, #c7c7cc 0px, transparent 50%),
+    radial-gradient(at 97% 94%, #828282 0px, transparent 50%),
+    radial-gradient(
+      at 59.30635838150289% 55.5895865237366%,
+      #5c5c5c 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+        at 21.734104046242773% 24.042879019908117%,
+        #000000 0px,
+        transparent 50%
+      )
+      #000000;
+  mix-blend-mode: var(--_mesh-gradient-blend-mode);
 }
 
 .imageWrapper img {
   max-height: 90%;
 
-  border: 2px solid orange;
   object-fit: cover;
   margin: auto;
 }
@@ -172,8 +187,6 @@ button a {
   justify-content: space-between;
   margin-right: 20px;
   /* height: fit-content; */
-
-  border: 2px solid green;
 
   flex: 1;
   height: fit-content;
